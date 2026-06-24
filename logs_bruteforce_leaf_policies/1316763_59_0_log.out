@@ -1,0 +1,835 @@
+submitit INFO (2026-06-24 01:22:28,159) - Starting with JobEnvironment(job_id=1316763_59, hostname=r23m0201.hpc.itc.rwth-aachen.de, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2026-06-24 01:22:28,160) - Loading pickle: /rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/logs_bruteforce_leaf_policies/1316763_59_submitted.pkl
+Running batch with 16 SMAC runs.
+[batch 1/16] policy=leaf_policy_3_5_5_1, seed=4
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 4a153e as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 73bb85 and rejected config 4a153e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbd536 and rejected config 73bb85 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ed9eb0 and rejected config dbd536 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e0a17f and rejected config ed9eb0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ebb4c and rejected config e0a17f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 911c16 and rejected config 8ebb4c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ded5b2 and rejected config 911c16 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 1449e4 and rejected config ded5b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 686243 and rejected config 1449e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c779fa and rejected config 686243 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6a2be4 and rejected config c779fa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3cf035 and rejected config 6a2be4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 196501 and rejected config 3cf035 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f475bb and rejected config 196501 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f702b2 and rejected config f475bb as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1f2990 and rejected config f702b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 940d71 and rejected config 1f2990 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9020f0 and rejected config 940d71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 1b6c5a and rejected config 9020f0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18503e and rejected config 1b6c5a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e02627 and rejected config 18503e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 279086 and rejected config e02627 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=1
+[INFO][abstract_intensifier.py:630] Added config 8cdfd2 and rejected config 279086 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config cba594 and rejected config 8cdfd2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config a8e976 and rejected config cba594 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config a6a563 and rejected config a8e976 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 647a92 and rejected config a6a563 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 147c7f and rejected config 647a92 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 1), seed=4, incumbent_cost=-3.130169033881997
+Configuration(values={
+  'x1': 0.2038939796804,
+  'x2': 0.0180483700015,
+  'x3': 0.4798131122445,
+  'x4': 0.2768820101555,
+  'x5': 0.3111838405417,
+  'x6': 0.6550169969008,
+})
+[batch 2/16] policy=leaf_policy_3_5_5_2, seed=0
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 250a07 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 9895f5 and rejected config 250a07 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6ed6e4 and rejected config 9895f5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 718a9a and rejected config 6ed6e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config bb975a and rejected config 718a9a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config db5527 and rejected config bb975a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ee964e and rejected config db5527 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 2305be and rejected config ee964e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18b129 and rejected config 2305be as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config bbcaca and rejected config 18b129 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 81dc46 and rejected config bbcaca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 40c0a8 and rejected config 81dc46 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f973aa and rejected config 40c0a8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 610002 and rejected config f973aa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dd363c and rejected config 610002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c3e69f and rejected config dd363c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 72e441 and rejected config c3e69f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 789c36 and rejected config 72e441 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1139e9 and rejected config 789c36 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 80546a and rejected config 1139e9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 7297a9 and rejected config 80546a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e40951 and rejected config 7297a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 257f91 and rejected config e40951 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=2
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 2), seed=0, incumbent_cost=-3.089983243156438
+Configuration(values={
+  'x1': 0.4040725036315,
+  'x2': 0.9418893523233,
+  'x3': 0.6721726997059,
+  'x4': 0.5846044027861,
+  'x5': 0.3036715506903,
+  'x6': 0.0507234563633,
+})
+[batch 3/16] policy=leaf_policy_3_5_5_2, seed=1
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 873002 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config ce9203 and rejected config 873002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1e5f6e and rejected config ce9203 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f55c8b and rejected config 1e5f6e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ba17af and rejected config f55c8b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e906c5 and rejected config ba17af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 93e8dd and rejected config e906c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f8e7a9 and rejected config 93e8dd as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config b53620 and rejected config f8e7a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5b995c and rejected config b53620 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ca79f7 and rejected config 5b995c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 611174 and rejected config ca79f7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ae826 and rejected config 611174 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 204dc3 and rejected config 8ae826 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 863f7b and rejected config 204dc3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config dcd511 and rejected config 863f7b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config be9dfc and rejected config dcd511 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 41e5fc and rejected config be9dfc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7726a2 and rejected config 41e5fc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 15f2c1 and rejected config 7726a2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config cff182 and rejected config 15f2c1 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aa9e63 and rejected config cff182 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 61ebd9 and rejected config aa9e63 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=2
+[INFO][abstract_intensifier.py:630] Added config a55514 and rejected config 61ebd9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 001979 and rejected config a55514 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 2), seed=1, incumbent_cost=-3.2020606512738916
+Configuration(values={
+  'x1': 0.4023029697193,
+  'x2': 0.8787752920277,
+  'x3': 0.8263662280139,
+  'x4': 0.5757058960143,
+  'x5': 0.1702028749978,
+  'x6': 0.0380155911864,
+})
+[batch 4/16] policy=leaf_policy_3_5_5_2, seed=2
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config b9fdb3 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 097fb7 and rejected config b9fdb3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 911f6d and rejected config 097fb7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 0b476d and rejected config 911f6d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aefe87 and rejected config 0b476d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f7ff84 and rejected config aefe87 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config defd71 and rejected config f7ff84 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ac36ae and rejected config defd71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6e28b8 and rejected config ac36ae as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 60a136 and rejected config 6e28b8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5e454a and rejected config 60a136 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config a82c08 and rejected config 5e454a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b1d60a and rejected config a82c08 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b8b3e2 and rejected config b1d60a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config 3c7d22 and rejected config b8b3e2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b054af and rejected config 3c7d22 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ce79c5 and rejected config b054af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=2
+[INFO][abstract_intensifier.py:630] Added config cf203e and rejected config ce79c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 62eaac and rejected config cf203e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 600139 and rejected config 62eaac as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 471484 and rejected config 600139 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 93ce71 and rejected config 471484 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 4c2429 and rejected config 93ce71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config c3dc97 and rejected config 4c2429 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 804330 and rejected config c3dc97 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config cae42a and rejected config 804330 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 2), seed=2, incumbent_cost=-3.3183493596295586
+Configuration(values={
+  'x1': 0.2098003768653,
+  'x2': 0.1406372069612,
+  'x3': 0.477393545132,
+  'x4': 0.2838654252399,
+  'x5': 0.3114768529471,
+  'x6': 0.659701534402,
+})
+[batch 5/16] policy=leaf_policy_3_5_5_2, seed=3
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 545df9 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 2b45fe and rejected config 545df9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 1d0738 and rejected config 2b45fe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 877ed2 and rejected config 1d0738 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config ba67df and rejected config 877ed2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 190948 and rejected config ba67df as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5bfaff and rejected config 190948 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 86090e and rejected config 5bfaff as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config fae8f3 and rejected config 86090e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 829b2f and rejected config fae8f3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ad0cbe and rejected config 829b2f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 07c652 and rejected config ad0cbe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 105245 and rejected config 07c652 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f1e6ca and rejected config 105245 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=2
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 9c2a18 and rejected config f1e6ca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 505d4f and rejected config 9c2a18 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 2), seed=3, incumbent_cost=-3.195422846940316
+Configuration(values={
+  'x1': 0.398625504519,
+  'x2': 0.8832534502598,
+  'x3': 0.7572495528907,
+  'x4': 0.5745160786129,
+  'x5': 0.1077835741384,
+  'x6': 0.0481348900809,
+})
+[batch 6/16] policy=leaf_policy_3_5_5_2, seed=4
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 4a153e as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 73bb85 and rejected config 4a153e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbd536 and rejected config 73bb85 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ed9eb0 and rejected config dbd536 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e0a17f and rejected config ed9eb0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ebb4c and rejected config e0a17f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 911c16 and rejected config 8ebb4c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ded5b2 and rejected config 911c16 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 1449e4 and rejected config ded5b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 686243 and rejected config 1449e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c779fa and rejected config 686243 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6a2be4 and rejected config c779fa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3cf035 and rejected config 6a2be4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 196501 and rejected config 3cf035 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f475bb and rejected config 196501 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f702b2 and rejected config f475bb as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1f2990 and rejected config f702b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 940d71 and rejected config 1f2990 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9020f0 and rejected config 940d71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 1b6c5a and rejected config 9020f0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18503e and rejected config 1b6c5a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e02627 and rejected config 18503e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 279086 and rejected config e02627 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=2
+[INFO][abstract_intensifier.py:630] Added config 9bcaa1 and rejected config 279086 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b44db0 and rejected config 9bcaa1 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7e2ec5 and rejected config b44db0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config ed31dc and rejected config 7e2ec5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6fa8f3 and rejected config ed31dc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f3a47c and rejected config 6fa8f3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 355f08 and rejected config f3a47c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 87ace9 and rejected config 355f08 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 2), seed=4, incumbent_cost=-3.1297905115524824
+Configuration(values={
+  'x1': 0.2022969094343,
+  'x2': 0.0179045504821,
+  'x3': 0.4719167077746,
+  'x4': 0.2770883424699,
+  'x5': 0.3082466243093,
+  'x6': 0.6568287636974,
+})
+[batch 7/16] policy=leaf_policy_3_5_5_3, seed=0
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 250a07 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 9895f5 and rejected config 250a07 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6ed6e4 and rejected config 9895f5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 718a9a and rejected config 6ed6e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config bb975a and rejected config 718a9a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config db5527 and rejected config bb975a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ee964e and rejected config db5527 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 2305be and rejected config ee964e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18b129 and rejected config 2305be as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config bbcaca and rejected config 18b129 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 81dc46 and rejected config bbcaca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 40c0a8 and rejected config 81dc46 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f973aa and rejected config 40c0a8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 610002 and rejected config f973aa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dd363c and rejected config 610002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c3e69f and rejected config dd363c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 72e441 and rejected config c3e69f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 789c36 and rejected config 72e441 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1139e9 and rejected config 789c36 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 80546a and rejected config 1139e9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 7297a9 and rejected config 80546a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e40951 and rejected config 7297a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 257f91 and rejected config e40951 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=3
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 3), seed=0, incumbent_cost=-3.089983243156438
+Configuration(values={
+  'x1': 0.4040725036315,
+  'x2': 0.9418893523233,
+  'x3': 0.6721726997059,
+  'x4': 0.5846044027861,
+  'x5': 0.3036715506903,
+  'x6': 0.0507234563633,
+})
+[batch 8/16] policy=leaf_policy_3_5_5_3, seed=1
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 873002 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config ce9203 and rejected config 873002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1e5f6e and rejected config ce9203 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f55c8b and rejected config 1e5f6e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ba17af and rejected config f55c8b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e906c5 and rejected config ba17af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 93e8dd and rejected config e906c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f8e7a9 and rejected config 93e8dd as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config b53620 and rejected config f8e7a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5b995c and rejected config b53620 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ca79f7 and rejected config 5b995c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 611174 and rejected config ca79f7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ae826 and rejected config 611174 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 204dc3 and rejected config 8ae826 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 863f7b and rejected config 204dc3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config dcd511 and rejected config 863f7b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config be9dfc and rejected config dcd511 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 41e5fc and rejected config be9dfc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7726a2 and rejected config 41e5fc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 15f2c1 and rejected config 7726a2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config cff182 and rejected config 15f2c1 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aa9e63 and rejected config cff182 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 61ebd9 and rejected config aa9e63 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=3
+[INFO][abstract_intensifier.py:630] Added config 112267 and rejected config 61ebd9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e19db8 and rejected config 112267 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config a045a7 and rejected config e19db8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 65c074 and rejected config a045a7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ec833b and rejected config 65c074 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 3), seed=1, incumbent_cost=-3.2017246457186364
+Configuration(values={
+  'x1': 0.4062993737593,
+  'x2': 0.8773435555135,
+  'x3': 0.8765995632565,
+  'x4': 0.577530167222,
+  'x5': 0.1454561020975,
+  'x6': 0.0396497022102,
+})
+[batch 9/16] policy=leaf_policy_3_5_5_3, seed=2
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config b9fdb3 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 097fb7 and rejected config b9fdb3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 911f6d and rejected config 097fb7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 0b476d and rejected config 911f6d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aefe87 and rejected config 0b476d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f7ff84 and rejected config aefe87 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config defd71 and rejected config f7ff84 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ac36ae and rejected config defd71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6e28b8 and rejected config ac36ae as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 60a136 and rejected config 6e28b8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5e454a and rejected config 60a136 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config a82c08 and rejected config 5e454a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b1d60a and rejected config a82c08 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b8b3e2 and rejected config b1d60a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config 3c7d22 and rejected config b8b3e2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b054af and rejected config 3c7d22 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ce79c5 and rejected config b054af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=3
+[INFO][abstract_intensifier.py:630] Added config aa8174 and rejected config ce79c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e3ef1f and rejected config aa8174 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 5211da and rejected config e3ef1f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b196d8 and rejected config 5211da as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6fe7c9 and rejected config b196d8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7aa47b and rejected config 6fe7c9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 61be64 and rejected config 7aa47b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 3), seed=2, incumbent_cost=-3.3159475301353343
+Configuration(values={
+  'x1': 0.2100891647854,
+  'x2': 0.1402100592585,
+  'x3': 0.4726375387139,
+  'x4': 0.2801187665332,
+  'x5': 0.303372767527,
+  'x6': 0.6625192853096,
+})
+[batch 10/16] policy=leaf_policy_3_5_5_3, seed=3
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 545df9 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 2b45fe and rejected config 545df9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 1d0738 and rejected config 2b45fe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 877ed2 and rejected config 1d0738 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config ba67df and rejected config 877ed2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 190948 and rejected config ba67df as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5bfaff and rejected config 190948 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 86090e and rejected config 5bfaff as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config fae8f3 and rejected config 86090e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 829b2f and rejected config fae8f3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ad0cbe and rejected config 829b2f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 07c652 and rejected config ad0cbe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 105245 and rejected config 07c652 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f1e6ca and rejected config 105245 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=3
+[INFO][abstract_intensifier.py:630] Added config 6d00ac and rejected config f1e6ca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6fe3ca and rejected config 6d00ac as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 87bff5 and rejected config 6fe3ca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6f5ef2 and rejected config 87bff5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 3), seed=3, incumbent_cost=-3.195668908537482
+Configuration(values={
+  'x1': 0.4048237106737,
+  'x2': 0.8838270311954,
+  'x3': 0.8428146582892,
+  'x4': 0.5689434920188,
+  'x5': 0.2070752022548,
+  'x6': 0.0493440746546,
+})
+[batch 11/16] policy=leaf_policy_3_5_5_3, seed=4
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 4a153e as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 73bb85 and rejected config 4a153e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbd536 and rejected config 73bb85 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ed9eb0 and rejected config dbd536 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e0a17f and rejected config ed9eb0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ebb4c and rejected config e0a17f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 911c16 and rejected config 8ebb4c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ded5b2 and rejected config 911c16 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 1449e4 and rejected config ded5b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 686243 and rejected config 1449e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c779fa and rejected config 686243 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6a2be4 and rejected config c779fa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3cf035 and rejected config 6a2be4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 196501 and rejected config 3cf035 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f475bb and rejected config 196501 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f702b2 and rejected config f475bb as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1f2990 and rejected config f702b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 940d71 and rejected config 1f2990 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9020f0 and rejected config 940d71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 1b6c5a and rejected config 9020f0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18503e and rejected config 1b6c5a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e02627 and rejected config 18503e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 279086 and rejected config e02627 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[BlockwiseMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=3
+[INFO][abstract_intensifier.py:630] Added config e10917 and rejected config 279086 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5299b4 and rejected config e10917 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 63c95c and rejected config 5299b4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dda2dd and rejected config 63c95c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbb5e3 and rejected config dda2dd as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 4260cf and rejected config dbb5e3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e455db and rejected config 4260cf as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 3), seed=4, incumbent_cost=-3.127043034662823
+Configuration(values={
+  'x1': 0.2041011467813,
+  'x2': 0.0180674441031,
+  'x3': 0.4521856630919,
+  'x4': 0.2749844912206,
+  'x5': 0.3104503314776,
+  'x6': 0.6581534535326,
+})
+[batch 12/16] policy=leaf_policy_3_5_5_5, seed=0
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 250a07 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 9895f5 and rejected config 250a07 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6ed6e4 and rejected config 9895f5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 718a9a and rejected config 6ed6e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config bb975a and rejected config 718a9a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config db5527 and rejected config bb975a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ee964e and rejected config db5527 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 2305be and rejected config ee964e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18b129 and rejected config 2305be as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config bbcaca and rejected config 18b129 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 81dc46 and rejected config bbcaca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 40c0a8 and rejected config 81dc46 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f973aa and rejected config 40c0a8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 610002 and rejected config f973aa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dd363c and rejected config 610002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c3e69f and rejected config dd363c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 72e441 and rejected config c3e69f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 789c36 and rejected config 72e441 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1139e9 and rejected config 789c36 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 80546a and rejected config 1139e9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 7297a9 and rejected config 80546a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e40951 and rejected config 7297a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 257f91 and rejected config e40951 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 5), seed=0, incumbent_cost=-3.089983243156438
+Configuration(values={
+  'x1': 0.4040725036315,
+  'x2': 0.9418893523233,
+  'x3': 0.6721726997059,
+  'x4': 0.5846044027861,
+  'x5': 0.3036715506903,
+  'x6': 0.0507234563633,
+})
+[batch 13/16] policy=leaf_policy_3_5_5_5, seed=1
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 873002 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config ce9203 and rejected config 873002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1e5f6e and rejected config ce9203 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f55c8b and rejected config 1e5f6e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ba17af and rejected config f55c8b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e906c5 and rejected config ba17af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 93e8dd and rejected config e906c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f8e7a9 and rejected config 93e8dd as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config b53620 and rejected config f8e7a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5b995c and rejected config b53620 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ca79f7 and rejected config 5b995c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 611174 and rejected config ca79f7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ae826 and rejected config 611174 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 204dc3 and rejected config 8ae826 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 863f7b and rejected config 204dc3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config dcd511 and rejected config 863f7b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config be9dfc and rejected config dcd511 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 41e5fc and rejected config be9dfc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7726a2 and rejected config 41e5fc as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 15f2c1 and rejected config 7726a2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config cff182 and rejected config 15f2c1 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aa9e63 and rejected config cff182 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 61ebd9 and rejected config aa9e63 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[INFO][abstract_intensifier.py:630] Added config 5e6a99 and rejected config 61ebd9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 663eef and rejected config 5e6a99 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 2404da and rejected config 663eef as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 73d3b8 and rejected config 2404da as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 08e5a8 and rejected config 73d3b8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 91cb07 and rejected config 08e5a8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 5), seed=1, incumbent_cost=-3.201745533473514
+Configuration(values={
+  'x1': 0.4018472605393,
+  'x2': 0.886280209682,
+  'x3': 0.8539615786971,
+  'x4': 0.5732329933034,
+  'x5': 0.1306671959207,
+  'x6': 0.0420308697785,
+})
+[batch 14/16] policy=leaf_policy_3_5_5_5, seed=2
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config b9fdb3 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 097fb7 and rejected config b9fdb3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 911f6d and rejected config 097fb7 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 0b476d and rejected config 911f6d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aefe87 and rejected config 0b476d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f7ff84 and rejected config aefe87 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config defd71 and rejected config f7ff84 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config ac36ae and rejected config defd71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6e28b8 and rejected config ac36ae as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 60a136 and rejected config 6e28b8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5e454a and rejected config 60a136 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config a82c08 and rejected config 5e454a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b1d60a and rejected config a82c08 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b8b3e2 and rejected config b1d60a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config 3c7d22 and rejected config b8b3e2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config b054af and rejected config 3c7d22 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ce79c5 and rejected config b054af as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 0d0d82 and rejected config ce79c5 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 82f687 and rejected config 0d0d82 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 0d971c and rejected config 82f687 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 5), seed=2, incumbent_cost=-3.316081956163268
+Configuration(values={
+  'x1': 0.204491845444,
+  'x2': 0.13985092791,
+  'x3': 0.4745801359781,
+  'x4': 0.2870064767719,
+  'x5': 0.3067923089463,
+  'x6': 0.6570180371244,
+})
+[batch 15/16] policy=leaf_policy_3_5_5_5, seed=3
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 545df9 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 2b45fe and rejected config 545df9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 1d0738 and rejected config 2b45fe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 877ed2 and rejected config 1d0738 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config ba67df and rejected config 877ed2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 190948 and rejected config ba67df as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 5bfaff and rejected config 190948 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 86090e and rejected config 5bfaff as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config fae8f3 and rejected config 86090e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 829b2f and rejected config fae8f3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ad0cbe and rejected config 829b2f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 07c652 and rejected config ad0cbe as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 105245 and rejected config 07c652 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f1e6ca and rejected config 105245 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][smbo.py:334] Finished 300 trials.
+[INFO][abstract_intensifier.py:630] Added config 8275cf and rejected config f1e6ca as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 5), seed=3, incumbent_cost=-3.19540224949533
+Configuration(values={
+  'x1': 0.4025324497246,
+  'x2': 0.8850754434641,
+  'x3': 0.7856191360309,
+  'x4': 0.5689026418671,
+  'x5': 0.0670923379478,
+  'x6': 0.0480744739387,
+})
+[batch 16/16] policy=leaf_policy_3_5_5_5, seed=4
+[INFO][abstract_initial_design.py:74] Using `n_configs` and ignoring `n_configs_per_hyperparameter`.
+[INFO][abstract_initial_design.py:143] Using 25 initial design configurations and 0 additional configurations.
+[BlockwiseMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=3
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 4a153e as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 73bb85 and rejected config 4a153e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbd536 and rejected config 73bb85 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ed9eb0 and rejected config dbd536 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e0a17f and rejected config ed9eb0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8ebb4c and rejected config e0a17f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 911c16 and rejected config 8ebb4c as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ded5b2 and rejected config 911c16 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[BlockwiseMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=5
+[INFO][abstract_intensifier.py:630] Added config 1449e4 and rejected config ded5b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 686243 and rejected config 1449e4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config c779fa and rejected config 686243 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6a2be4 and rejected config c779fa as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3cf035 and rejected config 6a2be4 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config 196501 and rejected config 3cf035 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f475bb and rejected config 196501 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f702b2 and rejected config f475bb as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1f2990 and rejected config f702b2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 940d71 and rejected config 1f2990 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9020f0 and rejected config 940d71 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 1b6c5a and rejected config 9020f0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 18503e and rejected config 1b6c5a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e02627 and rejected config 18503e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 279086 and rejected config e02627 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config ec293a and rejected config 279086 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e29a5e and rejected config ec293a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ecb863 and rejected config e29a5e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=(3, 5, 5, 5), seed=4, incumbent_cost=-3.1260479303197415
+Configuration(values={
+  'x1': 0.2030666871351,
+  'x2': 0.017740525072,
+  'x3': 0.4525706961289,
+  'x4': 0.278613856793,
+  'x5': 0.3095618112948,
+  'x6': 0.6589153883889,
+})
+submitit INFO (2026-06-24 01:37:49,908) - Job completed successfully
+[INFO][submission.py:56] Job completed successfully
+submitit INFO (2026-06-24 01:37:49,917) - Exiting after successful completion
+[INFO][submission.py:61] Exiting after successful completion

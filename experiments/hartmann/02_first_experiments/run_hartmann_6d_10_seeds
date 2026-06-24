@@ -1,0 +1,67 @@
+from master_utils.benchmarks import hartmann
+
+from ConfigSpace import ConfigurationSpace, Configuration, Float
+from smac import Scenario, HyperparameterOptimizationFacade
+
+import submitit
+
+
+def hartmann_6d_eval(config: Configuration, seed: int = 0):
+    x = [config[f"x{i}"] for i in range(1, 7)]
+    return hartmann(x, 6)
+
+
+def run_smac(seed: int):
+    n_trials = 500
+
+    cs = ConfigurationSpace()
+    cs.add([Float(f"x{i}", (0, 1)) for i in range(1, 7)])
+
+    scenario = Scenario(
+        name="hartmann_6d_10seeds",
+        output_directory=(
+            "/home/io632776/experiments/adaptive-smac/"
+            "experiments/hartmann/02_first_experiments"
+        ),
+        configspace=cs,
+        deterministic=True,
+        n_trials=n_trials,
+        seed=seed,
+    )
+
+    smac = HyperparameterOptimizationFacade(
+        scenario=scenario,
+        target_function=hartmann_6d_eval,
+        # overwrite=True,
+    )
+
+    incumbent = smac.optimize()
+    print(incumbent)
+
+    return incumbent
+
+
+executor = submitit.AutoExecutor(
+    folder="logs",
+    cluster="slurm",
+    slurm_max_num_timeout=1000,
+)
+
+executor.update_parameters(
+    timeout_min=60 * 24,
+    slurm_array_parallelism=100,
+    cpus_per_task=1,
+    mem_gb=2.4,
+    slurm_job_name="Hartmann6D",
+    slurm_additional_parameters={"requeue": True},
+)
+
+jobs = []
+with executor.batch():
+    for seed in range(10):
+        job = executor.submit(run_smac, seed)
+        jobs.append(job)
+
+print("submitted_jobs:")
+for job in jobs:
+    print(job.job_id)

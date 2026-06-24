@@ -1,0 +1,63 @@
+submitit INFO (2026-06-23 23:44:26,161) - Starting with JobEnvironment(job_id=1315261_29, hostname=r23m0215.hpc.itc.rwth-aachen.de, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2026-06-23 23:44:26,162) - Loading pickle: /rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/logs_fixed_vs_learned/1315261_29_submitted.pkl
+[INFO][abstract_initial_design.py:143] Using 60 initial design configurations and 0 additional configurations.
+[LearnedBlockMinSamplesLeafCallback] trials=0, block=1, min_samples_leaf=5
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 4a153e as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 73bb85 and rejected config 4a153e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config dbd536 and rejected config 73bb85 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ed9eb0 and rejected config dbd536 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config b18d32 and rejected config ed9eb0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[LearnedBlockMinSamplesLeafCallback] trials=100, block=2, min_samples_leaf=4
+[INFO][abstract_intensifier.py:630] Added config ac433b and rejected config b18d32 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aa1fe9 and rejected config ac433b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1fe3c0 and rejected config aa1fe9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config d85285 and rejected config 1fe3c0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 780037 and rejected config d85285 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config d9cd0a and rejected config 780037 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config db6979 and rejected config d9cd0a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 182469 and rejected config db6979 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 468ebb and rejected config 182469 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9e2dc9 and rejected config 468ebb as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8c1134 and rejected config 9e2dc9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[LearnedBlockMinSamplesLeafCallback] trials=300, block=4, min_samples_leaf=1
+[INFO][abstract_intensifier.py:630] Added config b31051 and rejected config 8c1134 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 849e5f and rejected config b31051 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config aee803 and rejected config 849e5f as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config de864b and rejected config aee803 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config 3ba217 and rejected config de864b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 90d439 and rejected config 3ba217 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 631d63 and rejected config 90d439 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 35cb02 and rejected config 631d63 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[LearnedBlockMinSamplesLeafCallback] trials=400, block=5, min_samples_leaf=4
+[INFO][abstract_intensifier.py:630] Added config cf1069 and rejected config 35cb02 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 82dccf and rejected config cf1069 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 779d8a and rejected config 82dccf as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 937eb9 and rejected config 779d8a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 450 trials.
+[INFO][smbo.py:334] Finished 500 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=learned_branch_select_policy, seed=4, incumbent_cost=-3.2189900319148834
+Configuration(values={
+  'x1': 0.1998900452567,
+  'x2': 0.0563355124146,
+  'x3': 0.450007218527,
+  'x4': 0.2781651820915,
+  'x5': 0.3120972366146,
+  'x6': 0.6596527827948,
+})
+submitit INFO (2026-06-23 23:46:20,141) - Job completed successfully
+[INFO][submission.py:56] Job completed successfully
+submitit INFO (2026-06-23 23:46:21,530) - Exiting after successful completion
+[INFO][submission.py:61] Exiting after successful completion

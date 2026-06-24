@@ -1,0 +1,63 @@
+submitit INFO (2026-06-23 14:42:46,124) - Starting with JobEnvironment(job_id=1291130_26, hostname=r23m0196.hpc.itc.rwth-aachen.de, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2026-06-23 14:42:46,124) - Loading pickle: /rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/logs_fixed_vs_learned/1291130_26_submitted.pkl
+[INFO][abstract_initial_design.py:143] Using 60 initial design configurations and 0 additional configurations.
+[LearnedBlockDepthCallback] trials=0, block=1, max_depth=10
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 873002 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config ce9203 and rejected config 873002 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 1e5f6e and rejected config ce9203 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config f55c8b and rejected config 1e5f6e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config 756bd6 and rejected config f55c8b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7242d3 and rejected config 756bd6 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7afc38 and rejected config 7242d3 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config c1cb54 and rejected config 7afc38 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9da8a9 and rejected config c1cb54 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[INFO][abstract_intensifier.py:630] Added config 37104d and rejected config 9da8a9 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config ff8327 and rejected config 37104d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config c1bb3e and rejected config ff8327 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 7c9b99 and rejected config c1bb3e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config e1c62b and rejected config 7c9b99 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 0ac936 and rejected config e1c62b as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config bc751d and rejected config 0ac936 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 72ff69 and rejected config bc751d as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6d9fd0 and rejected config 72ff69 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config 8c480a and rejected config 6d9fd0 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6f70a8 and rejected config 8c480a as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 547ec2 and rejected config 6f70a8 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3a6996 and rejected config 547ec2 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config ddb465 and rejected config 3a6996 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 9a0c56 and rejected config ddb465 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config ce3080 and rejected config 9a0c56 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 36f632 and rejected config ce3080 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 3a9117 and rejected config 36f632 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[LearnedBlockDepthCallback] trials=300, block=4, max_depth=15
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][abstract_intensifier.py:630] Added config b767cf and rejected config 3a9117 as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 22b47e and rejected config b767cf as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][abstract_intensifier.py:630] Added config 322902 and rejected config 22b47e as incumbent because it is not better than the incumbents on 1 instances: 
+[INFO][smbo.py:334] Finished 400 trials.
+[INFO][smbo.py:334] Finished 450 trials.
+[INFO][smbo.py:334] Finished 500 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=learned_branch_select_policy, seed=1, incumbent_cost=-3.1980897791467284
+Configuration(values={
+  'x1': 0.4030387608216,
+  'x2': 0.8822460858531,
+  'x3': 0.8444650470485,
+  'x4': 0.5773385239402,
+  'x5': 0.1208642257488,
+  'x6': 0.0284457811112,
+})
+submitit INFO (2026-06-23 14:44:16,582) - Job completed successfully
+[INFO][submission.py:56] Job completed successfully
+submitit INFO (2026-06-23 14:44:16,585) - Exiting after successful completion
+[INFO][submission.py:61] Exiting after successful completion
