@@ -20,12 +20,13 @@ def run():
         name="simple_scenario",
         configspace=cs,
         output_directory=Path("/home/io632776/experiments/adaptive-smac/experiments/hartmann/Debug_04"),
-        seed=0
+        seed=0,
+        deterministic=True
     )
 
     smac = HPOFacade(
         scenario=sc,
-        target_function=eval,
+        target_function=eval
     )
 
     incumbent = smac.optimize()

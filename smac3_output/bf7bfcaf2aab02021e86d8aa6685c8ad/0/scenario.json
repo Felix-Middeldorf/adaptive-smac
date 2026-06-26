@@ -1,5 +1,5 @@
 {
-    "name": "simple_scenario",
+    "name": "bf7bfcaf2aab02021e86d8aa6685c8ad",
     "deterministic": true,
     "objectives": "cost",
     "crash_cost": Infinity,
@@ -25,19 +25,14 @@
         },
         "runner": {
             "name": "TargetFunctionRunner",
-            "code": "b't\\x00\\x87\\x00f\\x01d\\x01d\\x02\\x84\\x08d\\x03D\\x00\\x83\\x01\\x83\\x01S\\x00'"
+            "code": "b'|\\x01d\\x01\\x19\\x00}\\x03|\\x03d\\x02\\x13\\x00S\\x00'"
         },
         "model": {
             "name": "RandomForest",
             "types": [
-                0,
                 0
             ],
             "bounds": [
-                [
-                    0,
-                    1.0
-                ],
                 [
                     0,
                     1.0
@@ -63,7 +58,7 @@
             "max_samples": null,
             "monotonic_cst": null,
             "random_state": 0,
-            "max_features": 2,
+            "max_features": 1,
             "log_y": true
         },
         "acquisition_maximizer": {
@@ -119,7 +114,7 @@
         },
         "initial_design": {
             "name": "SobolInitialDesign",
-            "n_configs": 20,
+            "n_configs": 10,
             "n_configs_per_hyperparameter": 10,
             "additional_configs": [],
             "seed": 0
@@ -149,5 +144,5 @@
         },
         "version": "2.4.0"
     },
-    "output_directory": "/home/io632776/experiments/adaptive-smac/experiments/hartmann/Debug_04/simple_scenario/0"
+    "output_directory": "smac3_output/bf7bfcaf2aab02021e86d8aa6685c8ad/0"
 }
