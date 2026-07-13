@@ -1,0 +1,65 @@
+submitit INFO (2026-07-13 12:36:27,272) - Starting with JobEnvironment(job_id=1888209_1, hostname=n23m0114.hpc.itc.rwth-aachen.de, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2026-07-13 12:36:27,273) - Loading pickle: /rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/synthaticBench/o1_deterministic/depth_policies/09_big_experiment/submitit_logs_consensus_ramp/1888209_1_submitted.pkl
+Lower bound: -100, 10
+[WARNING][abstract_encoder.py:74] We strongly encourage to use instance features when using instances.If no instance features are passed, the runhistory encoder can not distinguish between different instances and therefore returns the same data points with different values, all of which are used to train the surrogate model.
+Consider using instance indices as features.
+[INFO][abstract_initial_design.py:143] Using 1 initial design configurations and 0 additional configurations.
+[INFO][abstract_intensifier.py:313] Using only one seed for deterministic scenario.
+[INFO][abstract_intensifier.py:523] Added config 76d066 as new incumbent because there are no incumbents yet.
+[INFO][abstract_intensifier.py:630] Added config 242f32 and rejected config 76d066 as incumbent because it is not better than the incumbents on 2 instances: 
+[INFO][abstract_intensifier.py:630] Added config 67c0d3 and rejected config 242f32 as incumbent because it is not better than the incumbents on 6 instances: 
+[INFO][abstract_intensifier.py:630] Added config a8a980 and rejected config 67c0d3 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 50 trials.
+[INFO][abstract_intensifier.py:630] Added config d48aa3 and rejected config a8a980 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config 6f44e5 and rejected config d48aa3 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config 86932b and rejected config 6f44e5 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 100 trials.
+[INFO][abstract_intensifier.py:630] Added config aac09e and rejected config 86932b as incumbent because it is not better than the incumbents on 10 instances: 
+[ConsensusRamp] completed_trials=107, max_depth=11
+[INFO][abstract_intensifier.py:630] Added config 196856 and rejected config aac09e as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config e74bae and rejected config 196856 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 150 trials.
+[INFO][abstract_intensifier.py:630] Added config 213485 and rejected config e74bae as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config c2fa90 and rejected config 213485 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 200 trials.
+[INFO][abstract_intensifier.py:630] Added config e3176e and rejected config c2fa90 as incumbent because it is not better than the incumbents on 10 instances: 
+[ConsensusRamp] completed_trials=205, max_depth=13
+[INFO][abstract_intensifier.py:630] Added config 1f5a42 and rejected config e3176e as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 250 trials.
+[INFO][abstract_intensifier.py:630] Added config 6346e9 and rejected config 1f5a42 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 300 trials.
+[ConsensusRamp] completed_trials=300, max_depth=16
+[INFO][abstract_intensifier.py:630] Added config 11b662 and rejected config 6346e9 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 350 trials.
+[INFO][smbo.py:334] Finished 400 trials.
+[ConsensusRamp] completed_trials=400, max_depth=19
+[INFO][abstract_intensifier.py:630] Added config 40618d and rejected config 11b662 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config 2ac906 and rejected config 40618d as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 450 trials.
+[INFO][smbo.py:334] Finished 500 trials.
+[ConsensusRamp] completed_trials=500, max_depth=20
+[INFO][abstract_intensifier.py:630] Added config 2647f2 and rejected config 2ac906 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 550 trials.
+[INFO][smbo.py:334] Finished 600 trials.
+[INFO][smbo.py:334] Finished 650 trials.
+[INFO][abstract_intensifier.py:630] Added config 64355d and rejected config 2647f2 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 700 trials.
+[INFO][abstract_intensifier.py:630] Added config 449559 and rejected config 64355d as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 750 trials.
+[INFO][smbo.py:334] Finished 800 trials.
+[INFO][smbo.py:334] Finished 850 trials.
+[INFO][abstract_intensifier.py:630] Added config 880847 and rejected config 449559 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 900 trials.
+[INFO][smbo.py:334] Finished 950 trials.
+[INFO][abstract_intensifier.py:630] Added config cc7c4f and rejected config 880847 as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][abstract_intensifier.py:630] Added config 8b0894 and rejected config cc7c4f as incumbent because it is not better than the incumbents on 10 instances: 
+[INFO][smbo.py:334] Finished 1000 trials.
+[INFO][smbo.py:342] Configuration budget is exhausted:
+[INFO][smbo.py:343] --- Remaining wallclock time: inf
+[INFO][smbo.py:344] --- Remaining cpu time: inf
+[INFO][smbo.py:345] --- Remaining trials: 0
+policy=consensus_ramp_9_11_13_16_19_20, benchmark_seed=40, smac_seed=1, output=/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/synthaticBench/o1_deterministic/depth_policies/09_big_experiment/smac_output/benchmark_seed_40/consensus_ramp_9_11_13_16_19_20/1/trajectory.json
+submitit INFO (2026-07-13 12:39:27,357) - Job completed successfully
+[INFO][submission.py:56] Job completed successfully
+submitit INFO (2026-07-13 12:39:27,362) - Exiting after successful completion
+[INFO][submission.py:61] Exiting after successful completion

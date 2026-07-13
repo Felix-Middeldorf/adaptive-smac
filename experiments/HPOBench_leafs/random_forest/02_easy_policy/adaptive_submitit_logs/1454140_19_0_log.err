@@ -1,0 +1,21 @@
+/home/io632776/work/py-envs/py3.12-smac/lib64/python3.9/site-packages/submitit/core/plugins.py:24: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[INFO] BenchmarkClient at 2026-06-28 22:34:13,547 --- ~~~ HPOBENCH VERSION: 0.0.9 ~~~~ CONTAINER VERSION: 0.0.1 ~~~
+INFO:    Environment variable SINGULARITYENV_HPOBENCH_DEBUG is set, but APPTAINERENV_HPOBENCH_DEBUG is preferred
+[INFO] openml.config at 2026-06-28 22:35:07,812 --- No config file found at /home/io632776/.config/openml/config, using default configuration.
+[INFO] BenchmarkServer at 2026-06-28 22:35:07,941 --- Logging level: 0
+[INFO] DataManager at 2026-06-28 22:35:11,634 --- Successfully loaded the preprocessed splits from /var/lib/hpobench/data/OpenML/org/openml/www/datasets/1464
+[INFO] BenchmarkServer at 2026-06-28 22:35:11,635 --- Server: Connected Successfully
+/home/io632776/work/py-envs/py3.12-smac/lib64/python3.9/site-packages/ConfigSpace/configuration_space.py:1038: UserWarning: The field 'default' should be 'default_value' !
+Found in item {'name': 'max_depth', 'log': True, 'lower': 1, 'upper': 50}
+  return decoder(item, cs, _dec)
+/home/io632776/work/py-envs/py3.12-smac/lib64/python3.9/site-packages/ConfigSpace/configuration_space.py:1038: UserWarning: The field 'default' should be 'default_value' !
+Found in item {'name': 'max_features', 'log': False, 'lower': 0.0, 'upper': 1.0}
+  return decoder(item, cs, _dec)
+/home/io632776/work/py-envs/py3.12-smac/lib64/python3.9/site-packages/ConfigSpace/configuration_space.py:1038: UserWarning: The field 'default' should be 'default_value' !
+Found in item {'name': 'min_samples_leaf', 'log': False, 'lower': 1, 'upper': 20}
+  return decoder(item, cs, _dec)
+/home/io632776/work/py-envs/py3.12-smac/lib64/python3.9/site-packages/ConfigSpace/configuration_space.py:1038: UserWarning: The field 'default' should be 'default_value' !
+Found in item {'name': 'min_samples_split', 'log': True, 'lower': 2, 'upper': 128}
+  return decoder(item, cs, _dec)
+[INFO] smac.initial_design.abstract_initial_design at 2026-06-28 22:35:11,642 --- Using `n_configs` and ignoring `n_configs_per_hyperparameter`.

@@ -203,6 +203,7 @@ def submit_jobs() -> None:
         cpus_per_task=1,
         mem_gb=2.4,
         slurm_job_name="HartmannLeafBruteForce",
+        slurm_setup=["export PYTHONHASHSEED=0"],
         slurm_additional_parameters={"requeue": True},
     )
 
