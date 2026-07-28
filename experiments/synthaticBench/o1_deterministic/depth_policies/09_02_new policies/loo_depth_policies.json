@@ -1,0 +1,14 @@
+{
+  "selection_source": "../09_big_experiment/analyze_big_experiment.ipynb",
+  "selection_method": "For each held-out landscape and each 100-trial block, select the fixed depth with the largest mean best-regret decrease on the other six landscapes. SMAC seeds are averaged within landscapes, then the six landscapes are weighted equally; ties prefer the shallower depth.",
+  "block_start_trials": [0, 100, 200, 300, 400, 500, 600, 700, 800, 900],
+  "policies": [
+    {"held_out_landscape": 40, "block_depths": [5, 9, 12, 13, 11, 16, 17, 20, 19, 20]},
+    {"held_out_landscape": 41, "block_depths": [5, 9, 12, 13, 15, 11, 17, 20, 19, 20]},
+    {"held_out_landscape": 42, "block_depths": [5, 7, 10, 13, 15, 11, 17, 20, 19, 20]},
+    {"held_out_landscape": 43, "block_depths": [5, 9, 16, 13, 11, 13, 17, 20, 17, 20]},
+    {"held_out_landscape": 44, "block_depths": [6, 9, 12, 12, 13, 11, 17, 20, 17, 20]},
+    {"held_out_landscape": 45, "block_depths": [5, 9, 10, 13, 14, 11, 17, 20, 18, 20]},
+    {"held_out_landscape": 46, "block_depths": [5, 9, 10, 13, 15, 11, 17, 20, 19, 20]}
+  ]
+}

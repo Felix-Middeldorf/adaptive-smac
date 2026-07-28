@@ -62,3 +62,7 @@ Submit all 70 jobs:
 /home/io632776/work/py-envs/adaptive-smac-synthactic-py311/bin/python \
   experiments/synthaticBench/o1_deterministic/depth_policies/09_big_experiment/submit_big_experiment.py
 ```
+
+`analyze_fixed_depth_rankings.ipynb` provides focused per-landscape rankings
+for all fixed depths 4--20. It ranks by mean final best regret across the ten
+SMAC seeds and also reports rankings by mean regret over the full trajectory.

@@ -1,0 +1,117 @@
+{
+  "configurations": 692,
+  "depth": 20,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "SLURM_CPUS_PER_TASK": "1",
+    "affinity_cpus": 1,
+    "hostname": "n23m0022.hpc.itc.rwth-aachen.de",
+    "joblib_cpu_count": 1,
+    "joblib_effective_n_jobs_minus_one": 1,
+    "python": "3.9.21"
+  },
+  "error": null,
+  "experiment_version": 1,
+  "finished_trials": 1000,
+  "incumbent_cost": 4.503188372850418,
+  "instance_feature_dimensions": 148,
+  "n_instances": 150,
+  "n_trials": 1000,
+  "phase_summary": {
+    "acquisition_maximize": {
+      "calls": 87,
+      "max_seconds": 0.6351067560026422,
+      "mean_seconds": 0.5155804712531403,
+      "median_seconds": 0.5041372519917786,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 44.85550099902321
+    },
+    "ask": {
+      "calls": 1000,
+      "max_seconds": 58.569317323039286,
+      "mean_seconds": 2.599819683507667,
+      "median_seconds": 0.1476428594905883,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 2599.819683507667
+    },
+    "collect_data": {
+      "calls": 87,
+      "max_seconds": 0.018032324966043234,
+      "mean_seconds": 0.008718213035682237,
+      "median_seconds": 0.008390270988456905,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 0.7584845341043547
+    },
+    "intensifier_save": {
+      "calls": 1001,
+      "max_seconds": 0.0021098139695823193,
+      "mean_seconds": 0.0008870753829230691,
+      "median_seconds": 0.0009132069535553455,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 0.8879624583059922
+    },
+    "model_train": {
+      "calls": 87,
+      "max_seconds": 0.4993789609288797,
+      "mean_seconds": 0.37461030918933536,
+      "median_seconds": 0.3741129139671102,
+      "total_expanded_inputs": 0,
+      "total_inputs": 45302,
+      "total_seconds_inclusive": 32.59109689947218
+    },
+    "optimizer_save": {
+      "calls": 1001,
+      "max_seconds": 1.6413473360007629,
+      "mean_seconds": 0.06008050852275168,
+      "median_seconds": 0.058322663069702685,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 60.14058903127443
+    },
+    "predict_marginalized": {
+      "calls": 30015,
+      "max_seconds": 0.15098526305519044,
+      "mean_seconds": 0.07925142171564936,
+      "median_seconds": 0.0776096599875018,
+      "total_expanded_inputs": 4502250,
+      "total_inputs": 30015,
+      "total_seconds_inclusive": 2378.7314227952156
+    },
+    "runhistory_save": {
+      "calls": 1001,
+      "max_seconds": 1.6394986159866676,
+      "mean_seconds": 0.05705604241329611,
+      "median_seconds": 0.05659307702444494,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 57.113098455709405
+    },
+    "tell": {
+      "calls": 1000,
+      "max_seconds": 1.6461596810258925,
+      "mean_seconds": 0.06483237495762297,
+      "median_seconds": 0.06252253154525533,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 64.83237495762296
+    }
+  },
+  "smac_seed": 1,
+  "target_evaluations": 1000,
+  "target_function_walltime_seconds": 4.288989782333374,
+  "timings_are_inclusive": true,
+  "variant": {
+    "challengers": 5000,
+    "local_search_iterations": 10,
+    "name": "random_search_only",
+    "periodic_save": true,
+    "random_search_only": true,
+    "retrain_after": 8,
+    "use_instance_features": true
+  },
+  "walltime_seconds": 2677.1157479000976
+}

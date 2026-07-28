@@ -1,0 +1,66 @@
+{
+  "after_common_limit": "hold the final selected depth",
+  "common_trial_limit": 5000,
+  "comparison_quantile_seed": 0,
+  "depth_coverage": {
+    "10": 5000,
+    "15": 5000,
+    "20": 5000,
+    "30": 5000,
+    "5": 5000
+  },
+  "depths": [
+    5,
+    10,
+    15,
+    20,
+    30
+  ],
+  "kind": "offline_oracle_from_fixed_depth_incumbents",
+  "segments": [
+    {
+      "depth": 5,
+      "trial": 1,
+      "validated_full_training_par10": 492.10455601265033
+    },
+    {
+      "depth": 10,
+      "trial": 67,
+      "validated_full_training_par10": 74.05167233323057
+    },
+    {
+      "depth": 5,
+      "trial": 88,
+      "validated_full_training_par10": 72.20417014639824
+    },
+    {
+      "depth": 10,
+      "trial": 102,
+      "validated_full_training_par10": 57.86745154789339
+    },
+    {
+      "depth": 5,
+      "trial": 317,
+      "validated_full_training_par10": 58.15402252593388
+    },
+    {
+      "depth": 30,
+      "trial": 1403,
+      "validated_full_training_par10": 55.42830184505632
+    },
+    {
+      "depth": 20,
+      "trial": 1999,
+      "validated_full_training_par10": 54.48468195426588
+    },
+    {
+      "depth": 15,
+      "trial": 3995,
+      "validated_full_training_par10": 51.627437806564075
+    }
+  ],
+  "smac_seed": 1,
+  "source": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/aclib/clasp_weighted-sequence_surrogate/01_initial_cw/analytics_cache/incumbent_trajectory_events.csv",
+  "source_sha256": "fd6e9391f8ac97391ad5331ea974bbf03d9e725dedc84239f9c3b830c7805a2d",
+  "tie_break": "smaller depth"
+}

@@ -12,6 +12,7 @@ from carps.utils.trials import TrialInfo
 from omegaconf import OmegaConf
 from smac import AlgorithmConfigurationFacade as ACFacade
 from smac import Scenario
+from smac.callback import Callback
 from smac.initial_design import RandomInitialDesign
 
 INSTANCE_SEED = 0
@@ -44,6 +45,45 @@ def ordered_trials(runhistory: Any) -> list[tuple[Any, Any]]:
     )
 
 
+class StagedDepthCallback(Callback):
+    def __init__(
+        self,
+        stage_boundaries: tuple[int, ...],
+        depth_schedule: tuple[int, ...],
+    ) -> None:
+        super().__init__()
+        if len(depth_schedule) != len(stage_boundaries) + 1:
+            raise ValueError(
+                "depth_schedule must contain one more value than "
+                "stage_boundaries"
+            )
+        self.stage_boundaries = stage_boundaries
+        self.depth_schedule = depth_schedule
+        self.transitions: list[tuple[int, int]] = []
+        self._last_depth: int | None = None
+
+    def depth_for_completed_trials(self, completed_trials: int) -> int:
+        for boundary, depth in zip(
+            self.stage_boundaries,
+            self.depth_schedule,
+        ):
+            if completed_trials < boundary:
+                return depth
+        return self.depth_schedule[-1]
+
+    def on_next_configurations_start(self, config_selector) -> None:
+        completed_trials = len(config_selector._runhistory)
+        depth = self.depth_for_completed_trials(completed_trials)
+        config_selector._model._rf_opts["max_depth"] = depth
+        if depth != self._last_depth:
+            self.transitions.append((completed_trials, depth))
+            self._last_depth = depth
+            print(
+                f"[StagedDepth] completed_trials={completed_trials}, "
+                f"max_depth={depth}"
+            )
+
+
 def run_depth_policy(
     max_depth: int,
     smac_seed: int,
@@ -64,6 +104,35 @@ def run_depth_policy(
         dimension=dimension,
         num_quadratic=num_quadratic,
         max_depth=max_depth,
+    )
+
+
+def run_staged_depth_policy(
+    policy: str,
+    depth_schedule: tuple[int, ...],
+    stage_boundaries: tuple[int, ...],
+    smac_seed: int,
+    problem_seed: int,
+    output_directory: Path,
+    n_trials: int,
+    n_instances: int = N_INSTANCES,
+    dimension: int = DEFAULT_DIMENSION,
+    num_quadratic: int = DEFAULT_NUM_QUADRATIC,
+) -> dict[str, Any]:
+    callback = StagedDepthCallback(stage_boundaries, depth_schedule)
+    return run_c1_policy(
+        policy=policy,
+        smac_seed=smac_seed,
+        problem_seed=problem_seed,
+        output_directory=output_directory,
+        n_trials=n_trials,
+        n_instances=n_instances,
+        dimension=dimension,
+        num_quadratic=num_quadratic,
+        max_depth=depth_schedule[0],
+        callback=callback,
+        staged_depth_schedule=depth_schedule,
+        staged_boundaries=stage_boundaries,
     )
 
 
@@ -101,6 +170,9 @@ def run_c1_policy(
     num_quadratic: int = DEFAULT_NUM_QUADRATIC,
     max_depth: int | None = None,
     min_samples_leaf: int | None = None,
+    callback: Callback | None = None,
+    staged_depth_schedule: tuple[int, ...] | None = None,
+    staged_boundaries: tuple[int, ...] | None = None,
 ) -> dict[str, Any]:
     if os.environ.get("PYTHONHASHSEED") != PYTHONHASHSEED:
         raise RuntimeError(
@@ -148,6 +220,7 @@ def run_c1_policy(
         target_function=target_function,
         model=model,
         initial_design=initial_design,
+        callbacks=[] if callback is None else [callback],
         overwrite=True,
     )
     incumbent = smac.optimize()
@@ -198,6 +271,14 @@ def run_c1_policy(
             for config_id, count in sorted(trials_per_config.items())
         },
     }
+    if staged_depth_schedule is not None:
+        result.update(
+            initial_max_depth=staged_depth_schedule[0],
+            final_max_depth=model._rf_opts["max_depth"],
+            stage_boundaries=list(staged_boundaries or ()),
+            depth_schedule=list(staged_depth_schedule),
+            transitions=getattr(callback, "transitions", []),
+        )
     output_path = scenario.output_directory / "trajectory.json"
     output_path.write_text(json.dumps(result, indent=2))
     print(

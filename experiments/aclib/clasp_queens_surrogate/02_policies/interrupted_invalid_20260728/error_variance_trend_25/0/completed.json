@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "instances/sat/sets/QUEENS-CSSC14/test.txt": {
+      "bytes": 31258,
+      "mtime_ns": 1784634017158709000
+    },
+    "instances/sat/sets/QUEENS-CSSC14/training.txt": {
+      "bytes": 43077,
+      "mtime_ns": 1784634017158979000
+    },
+    "target_algorithms/surrogate/clasp_queens/config_space.clasp_queens.par10.random.pcs": {
+      "bytes": 5099,
+      "mtime_ns": 1570034174000000000
+    },
+    "target_algorithms/surrogate/clasp_queens/inst_feat_dict.clasp_queens.par10.random.json": {
+      "bytes": 2774723,
+      "mtime_ns": 1570034174000000000
+    },
+    "target_algorithms/surrogate/clasp_queens/pyrfr_model.clasp_queens.par10.random.bin": {
+      "bytes": 460199524,
+      "mtime_ns": 1570034175000000000
+    },
+    "target_algorithms/surrogate/clasp_queens/pyrfr_wrapper.clasp_queens.par10.random.pkl": {
+      "bytes": 1912,
+      "mtime_ns": 1570034175000000000
+    }
+  },
+  "benchmark": "clasp_queens",
+  "deterministic": true,
+  "display_name": "Clasp Queens",
+  "experiment_version": 1,
+  "initial_configuration_choice": {
+    "assessment": {
+      "candidate_count_including_default": 129,
+      "default_screen_mean_par10": 714.9689,
+      "default_screen_rank": 128,
+      "method": "Default plus 128 ConfigSpace draws, seed 20260727, evaluated on 64 evenly spaced training instances with quantile seed 0.",
+      "replacement_rule": "Replace the ACLib default when its screen rank is at most 15 of 129.",
+      "screen_instance_count": 64,
+      "selection_note": "The default was not unusually strong, so the ordinary ACLib default is retained."
+    },
+    "kind": "default"
+  },
+  "initials": "cq",
+  "local_random_forest_source": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/SMAC3/smac/model/random_forest/random_forest.py",
+  "local_smac_root": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/SMAC3",
+  "n_training_instances": 484,
+  "n_trials": 5000,
+  "oracle_schedule": null,
+  "policy": "error_variance_trend_25",
+  "policy_parameters": {
+    "depth_increment": 5,
+    "error_trend_min_fitted_growth": 1.25,
+    "error_trend_min_rank_correlation": 0.5,
+    "error_trend_window": 25,
+    "saturation_fraction": 0.9
+  },
+  "pythonhashseed": "0",
+  "random_design_probability": 0.0,
+  "smac_model": {
+    "initial_max_depth": 5,
+    "min_samples_leaf": 1,
+    "min_samples_split": 1,
+    "n_trees": 100,
+    "pca_components": null
+  },
+  "smac_seed": 0,
+  "state": "running",
+  "target_quantile_seed": 0,
+  "telemetry_schema_version": 3,
+  "test_instances_used": 0
+}

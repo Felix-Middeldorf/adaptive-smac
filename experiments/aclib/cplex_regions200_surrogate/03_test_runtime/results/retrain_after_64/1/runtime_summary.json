@@ -1,0 +1,144 @@
+{
+  "configurations": 670,
+  "depth": 20,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "SLURM_CPUS_PER_TASK": "1",
+    "affinity_cpus": 1,
+    "hostname": "n23m0022.hpc.itc.rwth-aachen.de",
+    "joblib_cpu_count": 1,
+    "joblib_effective_n_jobs_minus_one": 1,
+    "python": "3.9.21"
+  },
+  "error": null,
+  "experiment_version": 1,
+  "finished_trials": 1000,
+  "incumbent_cost": 4.20332600414753,
+  "instance_feature_dimensions": 148,
+  "n_instances": 150,
+  "n_trials": 1000,
+  "phase_summary": {
+    "acquisition_maximize": {
+      "calls": 11,
+      "max_seconds": 22.61361542099621,
+      "mean_seconds": 12.39163841092324,
+      "median_seconds": 14.064511909964494,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 136.30802252015565
+    },
+    "ask": {
+      "calls": 1000,
+      "max_seconds": 71.35344559501391,
+      "mean_seconds": 0.5427099113385193,
+      "median_seconds": 0.10921530704945326,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 542.7099113385193
+    },
+    "collect_data": {
+      "calls": 11,
+      "max_seconds": 0.016205486957915127,
+      "mean_seconds": 0.009091966891322623,
+      "median_seconds": 0.010030242963694036,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 0.10001163580454886
+    },
+    "intensifier_save": {
+      "calls": 1001,
+      "max_seconds": 0.0022921250201761723,
+      "mean_seconds": 0.0008127928607270017,
+      "median_seconds": 0.0008126010652631521,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 0.8136056535877287
+    },
+    "local_search_maximize": {
+      "calls": 11,
+      "max_seconds": 20.693075613002293,
+      "mean_seconds": 10.531592283821242,
+      "median_seconds": 12.291289897053503,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 115.84751512203366
+    },
+    "local_search_walk": {
+      "calls": 11,
+      "max_seconds": 20.485087882960215,
+      "mean_seconds": 10.392116785568016,
+      "median_seconds": 12.175167231005616,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 114.31328464124817
+    },
+    "model_train": {
+      "calls": 11,
+      "max_seconds": 0.5294262779643759,
+      "mean_seconds": 0.4060978036246855,
+      "median_seconds": 0.42208691500127316,
+      "total_expanded_inputs": 0,
+      "total_inputs": 6218,
+      "total_seconds_inclusive": 4.467075839871541
+    },
+    "optimizer_save": {
+      "calls": 1001,
+      "max_seconds": 0.12129587505478412,
+      "mean_seconds": 0.05048910268434936,
+      "median_seconds": 0.046508805942721665,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 50.539591787033714
+    },
+    "predict_marginalized": {
+      "calls": 4757,
+      "max_seconds": 1.6234105859184638,
+      "mean_seconds": 0.08074556298011928,
+      "median_seconds": 0.07473124202806503,
+      "total_expanded_inputs": 19911450,
+      "total_inputs": 132743,
+      "total_seconds_inclusive": 384.10664309642743
+    },
+    "random_search": {
+      "calls": 11,
+      "max_seconds": 2.150469443993643,
+      "mean_seconds": 1.8577868332663043,
+      "median_seconds": 1.8492999910376966,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 20.435655165929347
+    },
+    "runhistory_save": {
+      "calls": 1001,
+      "max_seconds": 0.1198517499724403,
+      "mean_seconds": 0.04914623834253228,
+      "median_seconds": 0.04519785393495113,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 49.195384580874816
+    },
+    "tell": {
+      "calls": 1000,
+      "max_seconds": 0.18374897597823292,
+      "mean_seconds": 0.055262515108450316,
+      "median_seconds": 0.052508435503114015,
+      "total_expanded_inputs": 0,
+      "total_inputs": 0,
+      "total_seconds_inclusive": 55.262515108450316
+    }
+  },
+  "smac_seed": 1,
+  "target_evaluations": 1000,
+  "target_function_walltime_seconds": 4.705925226211548,
+  "timings_are_inclusive": true,
+  "variant": {
+    "challengers": 5000,
+    "local_search_iterations": 10,
+    "name": "retrain_after_64",
+    "periodic_save": true,
+    "random_search_only": false,
+    "retrain_after": 64,
+    "use_instance_features": true
+  },
+  "walltime_seconds": 610.4578115000622
+}

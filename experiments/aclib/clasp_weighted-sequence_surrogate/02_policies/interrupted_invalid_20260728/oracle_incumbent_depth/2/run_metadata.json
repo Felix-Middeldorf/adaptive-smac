@@ -1,0 +1,112 @@
+{
+  "assets": {
+    "instances/asp/sets/weighted-sequence/test.txt": {
+      "bytes": 33183,
+      "mtime_ns": 1784634016894575000
+    },
+    "instances/asp/sets/weighted-sequence/training.txt": {
+      "bytes": 33408,
+      "mtime_ns": 1784634016894863000
+    },
+    "target_algorithms/surrogate/clasp_weighted/config_space.clasp_weighted.par10.random.pcs": {
+      "bytes": 6343,
+      "mtime_ns": 1570087641000000000
+    },
+    "target_algorithms/surrogate/clasp_weighted/inst_feat_dict.clasp_weighted.par10.random.json": {
+      "bytes": 663080,
+      "mtime_ns": 1570087642000000000
+    },
+    "target_algorithms/surrogate/clasp_weighted/pyrfr_model.clasp_weighted.par10.random.bin": {
+      "bytes": 398194652,
+      "mtime_ns": 1570087663000000000
+    },
+    "target_algorithms/surrogate/clasp_weighted/pyrfr_wrapper.clasp_weighted.par10.random.pkl": {
+      "bytes": 1448,
+      "mtime_ns": 1570087664000000000
+    }
+  },
+  "benchmark": "clasp_weighted",
+  "deterministic": true,
+  "display_name": "Clasp weighted-sequence",
+  "experiment_version": 1,
+  "initial_configuration_choice": {
+    "assessment": {
+      "candidate_count_including_default": 129,
+      "default_screen_mean_par10": 143.5191739,
+      "default_screen_rank": 29,
+      "method": "Default plus 128 ConfigSpace draws, seed 20260727, evaluated on 64 evenly spaced training instances with quantile seed 0.",
+      "replacement_configuration_sha256": "ddcd24659e693b2cd6599d452a2a88b8d215210c09d1ed2a0e123b0733ca855e",
+      "replacement_rule": "Replace the ACLib default when its screen rank is at most 15 of 129.",
+      "replacement_screen_mean_par10": 479.202303763479,
+      "replacement_screen_rank": 82,
+      "screen_instance_count": 64,
+      "selection_note": "The default was not exceptionally strong, but it is intentionally not used. Sample index 0 is the reproducible first draw, not a cherry-picked candidate."
+    },
+    "kind": "sampled",
+    "sample_index": 0,
+    "sampling_batch_size": 128,
+    "sampling_seed": 20260727
+  },
+  "initials": "cw",
+  "local_random_forest_source": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/SMAC3/smac/model/random_forest/random_forest.py",
+  "local_smac_root": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/SMAC3",
+  "n_training_instances": 240,
+  "n_trials": 5000,
+  "oracle_schedule": {
+    "after_common_limit": "hold the final selected depth",
+    "common_trial_limit": 5000,
+    "comparison_quantile_seed": 0,
+    "depth_coverage": {
+      "10": 5000,
+      "15": 5000,
+      "20": 5000,
+      "30": 5000,
+      "5": 5000
+    },
+    "depths": [
+      5,
+      10,
+      15,
+      20,
+      30
+    ],
+    "kind": "offline_oracle_from_fixed_depth_incumbents",
+    "segments": [
+      {
+        "depth": 5,
+        "trial": 1,
+        "validated_full_training_par10": 492.10455601265033
+      },
+      {
+        "depth": 10,
+        "trial": 102,
+        "validated_full_training_par10": 51.80223480183631
+      }
+    ],
+    "smac_seed": 2,
+    "source": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/aclib/clasp_weighted-sequence_surrogate/01_initial_cw/analytics_cache/incumbent_trajectory_events.csv",
+    "source_sha256": "fd6e9391f8ac97391ad5331ea974bbf03d9e725dedc84239f9c3b830c7805a2d",
+    "tie_break": "smaller depth"
+  },
+  "policy": "oracle_incumbent_depth",
+  "policy_parameters": {
+    "depth_increment": 5,
+    "error_trend_min_fitted_growth": 1.25,
+    "error_trend_min_rank_correlation": 0.5,
+    "error_trend_window": 25,
+    "saturation_fraction": 0.9
+  },
+  "pythonhashseed": "0",
+  "random_design_probability": 0.0,
+  "smac_model": {
+    "initial_max_depth": 5,
+    "min_samples_leaf": 1,
+    "min_samples_split": 1,
+    "n_trees": 100,
+    "pca_components": null
+  },
+  "smac_seed": 2,
+  "target_quantile_seed": 0,
+  "telemetry_schema_version": 3,
+  "test_instances_used": 0
+}

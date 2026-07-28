@@ -1,0 +1,15 @@
+{
+  "selection_source": "../09_big_experiment/analyze_big_experiment.ipynb",
+  "selection_method": "For each landscape and each 100-trial block, select the fixed depth with the largest mean best-regret decrease over the ten SMAC seeds from that same landscape. Exact ties prefer the shallower depth.",
+  "selection_is_in_sample": true,
+  "block_start_trials": [0, 100, 200, 300, 400, 500, 600, 700, 800, 900],
+  "policies": [
+    {"landscape_seed": 40, "block_depths": [4, 7, 16, 11, 12, 11, 14, 20, 20, 4]},
+    {"landscape_seed": 41, "block_depths": [5, 11, 10, 18, 17, 19, 15, 20, 18, 6]},
+    {"landscape_seed": 42, "block_depths": [7, 9, 7, 8, 14, 20, 18, 5, 17, 5]},
+    {"landscape_seed": 43, "block_depths": [8, 7, 8, 12, 15, 11, 17, 15, 19, 16]},
+    {"landscape_seed": 44, "block_depths": [5, 11, 6, 15, 11, 13, 10, 9, 18, 17]},
+    {"landscape_seed": 45, "block_depths": [6, 6, 9, 12, 13, 16, 19, 17, 4, 4]},
+    {"landscape_seed": 46, "block_depths": [9, 14, 11, 17, 12, 16, 19, 18, 9, 11]}
+  ]
+}

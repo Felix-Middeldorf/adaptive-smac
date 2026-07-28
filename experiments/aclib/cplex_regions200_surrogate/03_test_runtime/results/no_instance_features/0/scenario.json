@@ -1,0 +1,737 @@
+{
+    "name": "no_instance_features",
+    "deterministic": true,
+    "objectives": "PAR10",
+    "crash_cost": 100000.0,
+    "termination_cost_threshold": Infinity,
+    "walltime_limit": Infinity,
+    "cputime_limit": Infinity,
+    "trial_walltime_limit": null,
+    "trial_memory_limit": null,
+    "n_trials": 1000,
+    "use_default_config": true,
+    "instances": [
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0000.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0005.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0006.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0009.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0010.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0017.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0018.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0019.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0021.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0023.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0026.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0028.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0031.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0033.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0035.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0036.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0040.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0042.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0045.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0046.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0047.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0048.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0049.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0052.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0053.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0054.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0055.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0057.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0060.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0066.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0069.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0070.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0073.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0074.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0076.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0077.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0078.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0079.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0081.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0083.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0084.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0085.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0086.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0087.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0089.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0092.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0094.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0098.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0099.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0100.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0103.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0105.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0106.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0110.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0111.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0112.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0115.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0116.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0121.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0123.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0124.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0125.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0126.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0129.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0133.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0136.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0140.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0144.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0147.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0148.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0149.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0150.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0151.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0153.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0154.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0157.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0159.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0160.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0164.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0166.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0169.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0170.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0172.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0175.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0176.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0177.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0178.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0185.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0186.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0187.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0192.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0193.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0197.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0199.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0200.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0207.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0208.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0209.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0212.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0213.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0214.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0222.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0230.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0233.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0235.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0239.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0240.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0243.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0245.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0247.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0248.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0250.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0254.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0255.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0256.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0257.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0258.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0259.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0260.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0261.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0265.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0266.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0270.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0271.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0272.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0274.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0276.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0277.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0278.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0280.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0282.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0283.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0284.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0288.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0289.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0290.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0292.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0293.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0294.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0295.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0296.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0300.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0302.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0304.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0305.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0306.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0310.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0313.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0314.lp",
+        "instances/mip/data/Regions200/CATS-d_regions-goods200-bids1000/CATS-d_regions-goods200-bids1000_0315.lp"
+    ],
+    "instance_features": null,
+    "adaptive_capping": false,
+    "adaptive_capping_slackfactor": null,
+    "runtime_cutoff": null,
+    "min_budget": null,
+    "max_budget": null,
+    "seed": 0,
+    "n_workers": 1,
+    "_meta": {
+        "facade": {
+            "name": "AlgorithmConfigurationFacade"
+        },
+        "runner": {
+            "name": "TargetFunctionRunner",
+            "code": "b'|\\x00j\\x00|\\x01|\\x03d\\x01\\x8d\\x02\\\\\\x02}\\x04}\\x05t\\x01|\\x02\\x83\\x01|\\x05d\\x02<\\x00|\\x04|\\x05f\\x02S\\x00'"
+        },
+        "model": {
+            "name": "RandomForest",
+            "types": [
+                4,
+                4,
+                6,
+                0,
+                4,
+                4,
+                1,
+                5,
+                2,
+                6,
+                7,
+                5,
+                5,
+                5,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                0,
+                6,
+                0,
+                0,
+                5,
+                0,
+                4,
+                6,
+                0,
+                3,
+                4,
+                2,
+                4,
+                7,
+                2,
+                4,
+                4,
+                5,
+                7,
+                3,
+                7,
+                6,
+                6,
+                3,
+                3,
+                6,
+                3,
+                3,
+                5,
+                3,
+                0,
+                2,
+                6,
+                4,
+                3,
+                5,
+                7,
+                3,
+                5,
+                3,
+                6,
+                5,
+                0,
+                2,
+                6,
+                5,
+                5,
+                0,
+                0,
+                6,
+                3,
+                0
+            ],
+            "bounds": [
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    1,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    7,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    7,
+                    NaN
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    7,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    7,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    4,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    7,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    2,
+                    NaN
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    5,
+                    NaN
+                ],
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    -1.0,
+                    1.0
+                ],
+                [
+                    6,
+                    NaN
+                ],
+                [
+                    3,
+                    NaN
+                ],
+                [
+                    -1.0,
+                    1.0
+                ]
+            ],
+            "pca_components": null,
+            "n_estimators": 10,
+            "cross_trees_variance": false,
+            "criterion": "squared_error",
+            "splitter": "random",
+            "max_depth": 20,
+            "min_samples_split": 3,
+            "min_samples_leaf": 3,
+            "min_weight_fraction_leaf": 0.0,
+            "max_leaf_nodes": 1048576,
+            "min_impurity_decrease": 1e-08,
+            "bootstrap": true,
+            "oob_score": false,
+            "n_jobs": -1,
+            "verbose": 0,
+            "warm_start": false,
+            "ccp_alpha": 0.0,
+            "max_samples": null,
+            "monotonic_cst": null,
+            "random_state": 0,
+            "max_features": 61,
+            "log_y": false
+        },
+        "acquisition_maximizer": {
+            "name": "LocalAndSortedRandomSearch",
+            "acquisition_function": {
+                "name": "EI",
+                "xi": 0.0,
+                "log": false
+            },
+            "challengers": 5000,
+            "seed": 0,
+            "random_search": {
+                "name": "RandomSearch",
+                "acquisition_function": {
+                    "name": "EI",
+                    "xi": 0.0,
+                    "log": false
+                },
+                "challengers": 5000,
+                "seed": 0
+            },
+            "local_search": {
+                "name": "LocalSearch",
+                "acquisition_function": {
+                    "name": "EI",
+                    "xi": 0.0,
+                    "log": false
+                },
+                "challengers": 5000,
+                "seed": 0,
+                "max_steps": null,
+                "n_steps_plateau_walk": 10,
+                "vectorization_min_obtain": 2,
+                "vectorization_max_obtain": 64,
+                "n_jobs": 1,
+                "stdev_init": 0.05,
+                "stdev_min": 0.005,
+                "stdev_max": null,
+                "upscale_thresh": 3,
+                "downscale_interval": 3
+            }
+        },
+        "acquisition_function": {
+            "name": "EI",
+            "xi": 0.0,
+            "log": false
+        },
+        "intensifier": {
+            "name": "Intensifier",
+            "max_incumbents": 10,
+            "max_config_calls": 2000,
+            "seed": 0
+        },
+        "initial_design": {
+            "name": "DefaultInitialDesign",
+            "n_configs": 250,
+            "n_configs_per_hyperparameter": 10,
+            "additional_configs": [
+                {
+                    "barrier_algorithm": "0",
+                    "barrier_crossover": "0",
+                    "barrier_limits_corrections": "-1",
+                    "barrier_limits_growth": 1000000000000.0001,
+                    "barrier_ordering": "0",
+                    "barrier_startalg": "1",
+                    "emphasis_memory": "no",
+                    "emphasis_mip": "0",
+                    "emphasis_numerical": "no",
+                    "feasopt_mode": "0",
+                    "lpmethod": "0",
+                    "mip_cuts_cliques": "0",
+                    "mip_cuts_covers": "0",
+                    "mip_cuts_disjunctive": "0",
+                    "mip_cuts_flowcovers": "0",
+                    "mip_cuts_gomory": "0",
+                    "mip_cuts_gubcovers": "0",
+                    "mip_cuts_implied": "0",
+                    "mip_cuts_mcfcut": "0",
+                    "mip_cuts_mircut": "0",
+                    "mip_cuts_pathcut": "0",
+                    "mip_cuts_zerohalfcut": "0",
+                    "mip_limits_aggforcut": 3,
+                    "mip_limits_cutpasses": "0",
+                    "mip_limits_cutsfactor": 4.0,
+                    "mip_limits_gomorycand": 200,
+                    "mip_limits_gomorypass": "0",
+                    "mip_limits_submipnodelim": 500,
+                    "mip_ordertype": "0",
+                    "mip_strategy_backtrack": "0.9999",
+                    "mip_strategy_bbinterval": 7,
+                    "mip_strategy_branch": "0",
+                    "mip_strategy_dive": "0",
+                    "mip_strategy_file": "1",
+                    "mip_strategy_fpheur": "0",
+                    "mip_strategy_heuristicfreq": "0",
+                    "mip_strategy_lbheur": "no",
+                    "mip_strategy_nodeselect": "1",
+                    "mip_strategy_presolvenode": "0",
+                    "mip_strategy_probe": "0",
+                    "mip_strategy_rinsheur": "0",
+                    "mip_strategy_search": "0",
+                    "mip_strategy_startalgorithm": "0",
+                    "mip_strategy_subalgorithm": "0",
+                    "mip_strategy_variableselect": "0",
+                    "network_netfind": "2",
+                    "network_pricing": "0",
+                    "preprocessing_aggregator": "-1",
+                    "preprocessing_boundstrength": "-1",
+                    "preprocessing_coeffreduce": "2",
+                    "preprocessing_dependency": "-1",
+                    "preprocessing_dual": "0",
+                    "preprocessing_fill": 10,
+                    "preprocessing_linear": "1",
+                    "preprocessing_numpass": "-1",
+                    "preprocessing_reduce": "3",
+                    "preprocessing_relax": "-1",
+                    "preprocessing_repeatpresolve": "-1",
+                    "preprocessing_symmetry": "-1",
+                    "read_scale": "0",
+                    "sifting_algorithm": "0",
+                    "simplex_crash": "1",
+                    "simplex_dgradient": "0",
+                    "simplex_limits_perturbation": "0",
+                    "simplex_limits_singularity": 10,
+                    "simplex_perturbation_switch": "no",
+                    "simplex_pgradient": "0",
+                    "simplex_pricing": "0",
+                    "simplex_refactor": "0",
+                    "simplex_tolerances_markowitz": 0.01
+                }
+            ],
+            "seed": 0
+        },
+        "random_design": {
+            "name": "ProbabilityRandomDesign",
+            "seed": 0,
+            "probability": 0.5
+        },
+        "runhistory_encoder": {
+            "name": "RunHistoryEncoder",
+            "considered_states": [
+                1,
+                2,
+                4
+            ],
+            "lower_budget_states": [],
+            "scale_percentage": 5,
+            "seed": 0
+        },
+        "multi_objective_algorithm": null,
+        "config_selector": {
+            "name": "ConfigSelector",
+            "retrain_after": 8,
+            "max_new_config_tries": 16,
+            "min_trials": 1
+        },
+        "version": "2.4.0"
+    },
+    "output_directory": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/aclib/cplex_regions200_surrogate/03_test_runtime/results/no_instance_features/0"
+}
