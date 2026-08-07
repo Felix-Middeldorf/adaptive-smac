@@ -1,0 +1,8 @@
+{
+  "confidence": 0.9,
+  "feature_ratio": 0.7,
+  "max_depth": 20,
+  "min_samples_leaf": 2,
+  "min_samples_split": 5,
+  "reason": "Capacity metrics show all trees exactly at depth cap (15) with median/mean depth 15. Increasing max_depth to 20 maintains constraint while allowing more splits. Reducing min_samples_split and min_samples_leaf enables finer splits, while feature_ratio 0.7 balances diversity and strength per *[coverage/calibration trends]*"
+}

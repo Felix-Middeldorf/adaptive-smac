@@ -1,0 +1,92 @@
+{
+  "archive": {
+    "data_train_records": 234964,
+    "fully_covered_configurations": 57,
+    "repeated_configuration_instance_pairs": 26238,
+    "status_counts": {
+      "TIMEOUT": 40129,
+      "UNSAT": 194835
+    },
+    "unique_configuration_instance_pairs": 180288,
+    "unique_configurations": 53112
+  },
+  "assets": {
+    "all_required_checks_pass": true,
+    "archive_conditions": 55,
+    "archive_feature_instances": 835,
+    "archive_forbiddens": 2,
+    "archive_hyperparameters": 75,
+    "archive_root": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/aclib-performance-data/clasp_queens",
+    "archive_test_instances": 351,
+    "archive_training_instances": 484,
+    "configspaces_equal": true,
+    "feature_dimensions": 119,
+    "feature_instance_names_equal": true,
+    "feature_minmax_match_within_5e_6": true,
+    "feature_minmax_max_absolute_error": 2.399212790549221e-06,
+    "local_conditions": 55,
+    "local_forbiddens": 2,
+    "local_hyperparameters": 75,
+    "packaged_feature_dimensions": 119,
+    "packaged_feature_instances": 835,
+    "test_list_sha256_archive": "f0acd97df1ca6fa6109e14c3453f5b05adb141f5cdb00089eb31590c1faf5813",
+    "test_list_sha256_local": "f0acd97df1ca6fa6109e14c3453f5b05adb141f5cdb00089eb31590c1faf5813",
+    "test_lists_identical": true,
+    "training_list_sha256_archive": "a0730fed9d7eccd706baad16a04b6ccaa3db639c04e31b402e0b6b3fe150075d",
+    "training_list_sha256_local": "a0730fed9d7eccd706baad16a04b6ccaa3db639c04e31b402e0b6b3fe150075d",
+    "training_lists_identical": true
+  },
+  "full_training": {
+    "configurations": 57,
+    "mean_absolute_error": 2.12236556714471,
+    "median_absolute_error": 0.8466743429305019,
+    "spearman_mean_par10": 0.9835364272750844
+  },
+  "interpretation": {
+    "new_random_configuration_generalization_tested": false,
+    "statistical_results_are_training_data_diagnostics": true,
+    "wrapper_call_path_verified": true
+  },
+  "point_level": {
+    "actual_timeout_fraction": 0.2,
+    "mean_absolute_log10_error": 0.36690789981929056,
+    "mean_absolute_par10_error": 475.2126822223961,
+    "median_absolute_par10_error": 1.402766334209442,
+    "predicted_timeout_fraction": 0.06,
+    "root_mean_squared_par10_error": 1170.7615085123286,
+    "sampled_records": 100,
+    "spearman_par10": 0.8599610537776036,
+    "timeout_confusion": {
+      "false_negative": 15,
+      "false_positive": 1,
+      "precision": 0.8333333333333334,
+      "recall": 0.25,
+      "true_negative": 79,
+      "true_positive": 5
+    }
+  },
+  "run": {
+    "elapsed_seconds": 100.82991027832031,
+    "output_directory": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/aclib/clasp_queens_surrogate/00_check_bench/results_smoke",
+    "parity_samples": 10,
+    "point_samples": 100,
+    "random_seed": 20260730,
+    "uncertainty_draws": 10,
+    "uncertainty_pairs": 20
+  },
+  "uncertainty": {
+    "mean_empirical_50_interval_coverage": 0.6708333333333333,
+    "mean_empirical_90_interval_coverage": 1.0,
+    "mean_real_repetitions": 3.15,
+    "repeated_pairs": 20,
+    "spearman_standard_deviation": 0.512781954887218
+  },
+  "validation_version": 1,
+  "wrapper_parity": {
+    "all_passed": true,
+    "maximum_cost_absolute_error": 0.0,
+    "maximum_input_absolute_error": 0.0,
+    "maximum_prediction_absolute_error": 0.0,
+    "tested_points": 10
+  }
+}

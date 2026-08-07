@@ -1,0 +1,9 @@
+{
+  "confidence": 0.75,
+  "feature_ratio": 0.7,
+  "max_depth": 10,
+  "min_samples_leaf": 1,
+  "min_samples_split": 3,
+  "n_trees": 100,
+  "reason": "Depth cap increased to better utilize tree capacity (68% at depth 5 suggests room for improvement); lower min_samples_leaf and higher feature_ratio to reduce bias in high-dimensional space (10D) while keeping splits conservative. Error-vs-std correlation (-0.24) indicates underconfident predictions\u2014balanced adjustments aim to tighten calibration."
+}

@@ -1,0 +1,82 @@
+{
+  "api_key_persisted_in_output": false,
+  "benchmark_seed": 52,
+  "checkpoints": [
+    100,
+    250,
+    500
+  ],
+  "configuration_space": {
+    "conditionals": false,
+    "deterministic_objective": true,
+    "forbidden_combinations": false,
+    "hierarchy": "none; every parameter is always active",
+    "objective_direction": "minimize",
+    "parameter_type": "continuous real-valued",
+    "parameters": {
+      "count": 50,
+      "default": 1.0,
+      "lower_bound": -600.0,
+      "name_pattern": "x_0 through x_{dimension_minus_1}",
+      "upper_bound": 600.0
+    },
+    "total_dimensions": 50
+  },
+  "dimension": 50,
+  "experiment": "o6_llm_dynamic",
+  "experiment_version": 2,
+  "initial_choice": null,
+  "initial_design": "random",
+  "initial_rf_settings": {
+    "feature_ratio": 0.8333333333333334,
+    "max_depth": 20,
+    "min_samples_leaf": 3,
+    "min_samples_split": 3,
+    "n_trees": 10
+  },
+  "instance_map": {
+    "i0": 0.2514604421867866,
+    "i1": -0.2642097265826038,
+    "i2": 1.2808453008865641,
+    "i3": 0.20980023430607941,
+    "i4": -1.071338746322222,
+    "i5": 0.7231901098189695,
+    "i6": 2.6080000902602745,
+    "i7": 1.8941619262584843,
+    "i8": -1.4074704716139852,
+    "i9": -2.530842942092105
+  },
+  "instance_seed": 0,
+  "local_smac_root": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/external/SMAC3",
+  "n_initial_configs": 10,
+  "n_instances": 10,
+  "n_trials": 1000,
+  "output_directory": "/rwthfs/rz/cluster/home/io632776/experiments/adaptive-smac/experiments/synthaticBench/o6_multi_modal/depth_policies/40_llm_o6/results/dimension_50/benchmark_seed_52/dynamic_gpt_5_4_mini/4",
+  "pca_components": 4,
+  "pythonhashseed": "12345",
+  "random_design_probability": 0.0,
+  "rf_setting_ranges": {
+    "feature_ratio": [
+      0.0,
+      1.0
+    ],
+    "max_depth": [
+      1,
+      30
+    ],
+    "min_samples_leaf": [
+      1,
+      10
+    ],
+    "min_samples_split": [
+      2,
+      10
+    ],
+    "n_trees": [
+      1,
+      100
+    ]
+  },
+  "rwthgpt_model": "gpt-5.4-mini",
+  "smac_seed": 4
+}

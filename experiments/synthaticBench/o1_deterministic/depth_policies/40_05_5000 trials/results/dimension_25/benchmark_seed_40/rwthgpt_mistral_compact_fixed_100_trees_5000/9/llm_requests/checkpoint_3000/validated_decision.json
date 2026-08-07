@@ -1,0 +1,9 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.75,
+  "max_depth": 10,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "n_trees": 100,
+  "reason": "Trees consistently reach max_depth cap with high coverage (0.875) and moderate error-STD correlation (0.49), indicating constrained depth doesn't hurt calibration. Lowering feature_ratio aims to reduce variance seen in recent fits while keeping splits conservative (min_samples_split=4) and leaves relaxed (min_samples_leaf=2)."
+}

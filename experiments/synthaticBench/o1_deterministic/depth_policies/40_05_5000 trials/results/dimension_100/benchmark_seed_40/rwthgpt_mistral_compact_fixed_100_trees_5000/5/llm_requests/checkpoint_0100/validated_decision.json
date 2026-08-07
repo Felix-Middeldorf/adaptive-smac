@@ -1,0 +1,9 @@
+{
+  "confidence": 0.78,
+  "feature_ratio": 0.3,
+  "max_depth": 5,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "n_trees": 100,
+  "reason": "Recent windows show high depth utilization (mean ~24%) and low coverage (1st std = 66%), suggesting under-constrained trees. To reduce over-confidence and improve calibration, propose shallower max_depth (5) and increased min_samples_split/leaf (4/2) to tighten capacity. Lower feature_ratio (0.3) prioritizes diverse splits over speed."
+}

@@ -1,0 +1,9 @@
+{
+  "confidence": 0.62,
+  "feature_ratio": 1.0,
+  "max_depth": 12,
+  "min_samples_leaf": 1,
+  "min_samples_split": 2,
+  "n_trees": 50,
+  "reason": "Recent fits show very shallow realized trees despite max_depth=20, suggesting the model is under-constrained by leaf/split settings more than depth. Increase ensemble size and allow fuller feature use to improve surrogate fidelity late in the run, while slightly lowering depth to reduce variance and keep trees manageable."
+}

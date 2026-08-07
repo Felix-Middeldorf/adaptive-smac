@@ -1,0 +1,9 @@
+{
+  "confidence": 0.82,
+  "feature_ratio": 0.55,
+  "max_depth": 20,
+  "min_samples_leaf": 2,
+  "min_samples_split": 3,
+  "n_trees": 100,
+  "reason": "Increased max_depth to 20 for deeper trees (tree_depth_median=17, fraction_trees_exactly_at_depth_cap=1.0 indicates room for deeper trees). Adjusted min_samples_split to 3 and kept min_samples_leaf at 2 to balance tree growth. Lowered feature_ratio to 0.55 to reduce feature noise as relative_proxy_error is low (<=0.03). Confidence moderated due to moderate error_std_correlation (0.48) and high relative proxy errors in initial windows."
+}

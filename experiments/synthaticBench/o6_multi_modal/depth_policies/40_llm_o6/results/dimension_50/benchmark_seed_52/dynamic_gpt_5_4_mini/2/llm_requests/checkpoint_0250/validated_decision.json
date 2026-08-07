@@ -1,0 +1,9 @@
+{
+  "confidence": 0.72,
+  "feature_ratio": 0.85,
+  "max_depth": 18,
+  "min_samples_leaf": 1,
+  "min_samples_split": 3,
+  "n_trees": 40,
+  "reason": "Recent fits show trees still underutilize depth when max_depth=14 and leaf size=2; performance improved as the model became more expressive. Increase depth, slightly reduce split/leaf regularization, raise feature subsampling to improve diversity, and use more trees for stability in the remaining phase."
+}

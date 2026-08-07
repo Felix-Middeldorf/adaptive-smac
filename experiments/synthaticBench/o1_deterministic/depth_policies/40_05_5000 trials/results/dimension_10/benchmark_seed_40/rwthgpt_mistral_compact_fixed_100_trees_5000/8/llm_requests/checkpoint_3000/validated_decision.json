@@ -1,0 +1,9 @@
+{
+  "confidence": 0.75,
+  "feature_ratio": 0.6,
+  "max_depth": 14,
+  "min_samples_leaf": 1,
+  "min_samples_split": 3,
+  "n_trees": 100,
+  "reason": "Moderate increase in max_depth to balance variance/bias, lower min_samples_split/leaf to reduce underfitting, and higher feature_ratio to increase randomness given current poor error_std_correlation (0.59) and median standardized error (0.44). Capacity data shows trees are strictly depth-constrained; confidently adjust to improve calibration."
+}

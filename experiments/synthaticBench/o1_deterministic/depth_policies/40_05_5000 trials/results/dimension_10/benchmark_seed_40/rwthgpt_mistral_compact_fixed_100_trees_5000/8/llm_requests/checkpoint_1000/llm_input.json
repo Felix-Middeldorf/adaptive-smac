@@ -1,0 +1,866 @@
+{
+  "actual_completed_trials_at_call": 1000,
+  "allowed_next_settings": {
+    "feature_ratio": "number in (0,1]",
+    "max_depth": "integer in [1,30]",
+    "min_samples_leaf": "integer in [1,10]",
+    "min_samples_split": "integer in [2,10]"
+  },
+  "capacity_and_calibration": {
+    "coverage_within_1_std": 0.8937876,
+    "coverage_within_2_std": 0.9609218,
+    "error_std_correlation": 0.4276282,
+    "fit_window_count": 50,
+    "fraction_trees_exactly_at_depth_cap": 1.0,
+    "matched_online_error_count": 998,
+    "median_standardized_error": 0.5531734,
+    "q90_standardized_error": 1.003703,
+    "tree_depth_median": 7.0,
+    "tree_depth_q10": 7.0,
+    "tree_depth_q90": 7.0
+  },
+  "checkpoint": 1000,
+  "current_rf_settings": {
+    "feature_ratio": 0.55,
+    "max_depth": 7,
+    "min_samples_leaf": 2,
+    "min_samples_split": 6,
+    "n_trees": 100
+  },
+  "evaluation_allocation": {
+    "completed_trials": 1000,
+    "evaluations_per_configuration": {
+      "mean": 1.32275,
+      "median": 1.0,
+      "n": 756,
+      "q25": 1.0,
+      "q75": 1.0
+    },
+    "final_best_config_mean_cost": -211958.0,
+    "unique_configurations": 756
+  },
+  "fixed_rf_hyperparameters": {
+    "n_trees": 100
+  },
+  "objective_direction": "minimize",
+  "optimization_search_space": {
+    "compact_constraint": "-100 <= x_i <= 100 for i=0,...,9",
+    "conditionals": false,
+    "forbidden_combinations": false,
+    "parameter_type": "continuous real-valued",
+    "parameters": [
+      {
+        "lower_bound": -100.0,
+        "name": "x_0",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_1",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_2",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_3",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_4",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_5",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_6",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_7",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_8",
+        "upper_bound": 100.0
+      },
+      {
+        "lower_bound": -100.0,
+        "name": "x_9",
+        "upper_bound": 100.0
+      }
+    ],
+    "total_dimensions": 10
+  },
+  "previous_decisions": [
+    {
+      "checkpoint": 100,
+      "confidence": 0.89,
+      "settings": {
+        "feature_ratio": 0.34,
+        "max_depth": 4,
+        "min_samples_leaf": 4,
+        "min_samples_split": 7,
+        "n_trees": 100
+      }
+    },
+    {
+      "checkpoint": 250,
+      "confidence": 0.78,
+      "settings": {
+        "feature_ratio": 0.45,
+        "max_depth": 8,
+        "min_samples_leaf": 3,
+        "min_samples_split": 5,
+        "n_trees": 100
+      }
+    },
+    {
+      "checkpoint": 500,
+      "confidence": 0.85,
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      }
+    }
+  ],
+  "recent_rf_fit_windows": [
+    {
+      "actual_tree_depth_mean": {
+        "mean": 7.0,
+        "median": 7.0,
+        "n": 10,
+        "q25": 7.0,
+        "q75": 7.0
+      },
+      "depth_utilization": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 10,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "fit_count": 10,
+      "fit_indices": [
+        45,
+        54
+      ],
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      },
+      "training_rows": [
+        605,
+        677
+      ]
+    },
+    {
+      "actual_tree_depth_mean": {
+        "mean": 7.0,
+        "median": 7.0,
+        "n": 10,
+        "q25": 7.0,
+        "q75": 7.0
+      },
+      "depth_utilization": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 10,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "fit_count": 10,
+      "fit_indices": [
+        55,
+        64
+      ],
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      },
+      "training_rows": [
+        685,
+        757
+      ]
+    },
+    {
+      "actual_tree_depth_mean": {
+        "mean": 7.0,
+        "median": 7.0,
+        "n": 10,
+        "q25": 7.0,
+        "q75": 7.0
+      },
+      "depth_utilization": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 10,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "fit_count": 10,
+      "fit_indices": [
+        65,
+        74
+      ],
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      },
+      "training_rows": [
+        765,
+        837
+      ]
+    },
+    {
+      "actual_tree_depth_mean": {
+        "mean": 7.0,
+        "median": 7.0,
+        "n": 10,
+        "q25": 7.0,
+        "q75": 7.0
+      },
+      "depth_utilization": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 10,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "fit_count": 10,
+      "fit_indices": [
+        75,
+        84
+      ],
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      },
+      "training_rows": [
+        845,
+        917
+      ]
+    },
+    {
+      "actual_tree_depth_mean": {
+        "mean": 7.0,
+        "median": 7.0,
+        "n": 10,
+        "q25": 7.0,
+        "q75": 7.0
+      },
+      "depth_utilization": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 10,
+        "q25": 1.0,
+        "q75": 1.0
+      },
+      "fit_count": 10,
+      "fit_indices": [
+        85,
+        94
+      ],
+      "settings": {
+        "feature_ratio": 0.55,
+        "max_depth": 7,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_trees": 100
+      },
+      "training_rows": [
+        925,
+        997
+      ]
+    }
+  ],
+  "summary_rule": "All trials 1-1000 aggregated into 10 consecutive equal-width windows; no raw configuration coordinates are included.",
+  "summary_version": 1,
+  "trial_windows": [
+    {
+      "absolute_proxy_error": {
+        "mean": 33656.8,
+        "median": 26577.6,
+        "n": 98,
+        "q25": 14629.8,
+        "q75": 53282.0
+      },
+      "acquisition_diagnostic_rows": 98,
+      "best_config_mean_cost_at_end": -137157.0,
+      "best_cost_improvement_in_window": null,
+      "expected_improvement": {
+        "mean": 5096.78,
+        "median": 5821.33,
+        "n": 98,
+        "q25": 3864.58,
+        "q75": 6275.48
+      },
+      "log_error_variance_correlation": 0.0812041,
+      "new_configurations": 50,
+      "observed_cost": {
+        "mean": -73494.3,
+        "median": -75167.2,
+        "n": 100,
+        "q25": -115260.0,
+        "q75": -27727.4
+      },
+      "predicted_mean": {
+        "mean": -57726.5,
+        "median": -60786.0,
+        "n": 98,
+        "q25": -99736.8,
+        "q75": -18848.8
+      },
+      "prediction_variance": {
+        "mean": 706531000.0,
+        "median": 813373000.0,
+        "n": 98,
+        "q25": 246283000.0,
+        "q75": 937298000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.734022,
+        "median": 0.501462,
+        "n": 98,
+        "q25": 0.16786,
+        "q75": 0.999323
+      },
+      "trial_count": 100,
+      "trials": [
+        1,
+        100
+      ],
+      "unique_configurations": 50,
+      "window": 1
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 31465.8,
+        "median": 34448.4,
+        "n": 100,
+        "q25": 27603.7,
+        "q75": 37925.9
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -165460.0,
+      "best_cost_improvement_in_window": 28303.0,
+      "expected_improvement": {
+        "mean": 8986.85,
+        "median": 9563.58,
+        "n": 100,
+        "q25": 9089.0,
+        "q75": 9907.73
+      },
+      "log_error_variance_correlation": 0.146711,
+      "new_configurations": 34,
+      "observed_cost": {
+        "mean": -146788.0,
+        "median": -150421.0,
+        "n": 100,
+        "q25": -161799.0,
+        "q75": -138460.0
+      },
+      "predicted_mean": {
+        "mean": -115974.0,
+        "median": -114481.0,
+        "n": 100,
+        "q25": -126068.0,
+        "q75": -112499.0
+      },
+      "prediction_variance": {
+        "mean": 2283810000.0,
+        "median": 2412160000.0,
+        "n": 100,
+        "q25": 2142590000.0,
+        "q75": 2738710000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.209687,
+        "median": 0.222365,
+        "n": 100,
+        "q25": 0.196757,
+        "q75": 0.252126
+      },
+      "trial_count": 100,
+      "trials": [
+        101,
+        200
+      ],
+      "unique_configurations": 35,
+      "window": 2
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 27187.8,
+        "median": 30120.9,
+        "n": 100,
+        "q25": 17607.0,
+        "q75": 35937.7
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -173897.0,
+      "best_cost_improvement_in_window": 8436.79,
+      "expected_improvement": {
+        "mean": 10243.8,
+        "median": 10220.6,
+        "n": 100,
+        "q25": 9810.41,
+        "q75": 10765.7
+      },
+      "log_error_variance_correlation": -0.0667921,
+      "new_configurations": 71,
+      "observed_cost": {
+        "mean": -155595.0,
+        "median": -162640.0,
+        "n": 100,
+        "q25": -169547.0,
+        "q75": -148688.0
+      },
+      "predicted_mean": {
+        "mean": -134349.0,
+        "median": -134300.0,
+        "n": 100,
+        "q25": -135187.0,
+        "q75": -132592.0
+      },
+      "prediction_variance": {
+        "mean": 2921020000.0,
+        "median": 2679750000.0,
+        "n": 100,
+        "q25": 2614500000.0,
+        "q75": 3288930000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.172167,
+        "median": 0.193767,
+        "n": 100,
+        "q25": 0.135793,
+        "q75": 0.21285
+      },
+      "trial_count": 100,
+      "trials": [
+        201,
+        300
+      ],
+      "unique_configurations": 72,
+      "window": 3
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 27122.6,
+        "median": 28715.5,
+        "n": 100,
+        "q25": 13884.0,
+        "q75": 39142.6
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -182668.0,
+      "best_cost_improvement_in_window": 8771.56,
+      "expected_improvement": {
+        "mean": 8599.43,
+        "median": 8965.32,
+        "n": 100,
+        "q25": 6956.18,
+        "q75": 10015.3
+      },
+      "log_error_variance_correlation": 0.236409,
+      "new_configurations": 73,
+      "observed_cost": {
+        "mean": -162174.0,
+        "median": -159783.0,
+        "n": 100,
+        "q25": -177854.0,
+        "q75": -152550.0
+      },
+      "predicted_mean": {
+        "mean": -136200.0,
+        "median": -140835.0,
+        "n": 100,
+        "q25": -146054.0,
+        "q75": -124675.0
+      },
+      "prediction_variance": {
+        "mean": 3298590000.0,
+        "median": 3367590000.0,
+        "n": 100,
+        "q25": 2365470000.0,
+        "q75": 4037760000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.16387,
+        "median": 0.161071,
+        "n": 100,
+        "q25": 0.0990547,
+        "q75": 0.215705
+      },
+      "trial_count": 100,
+      "trials": [
+        301,
+        400
+      ],
+      "unique_configurations": 73,
+      "window": 4
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 37988.8,
+        "median": 38877.2,
+        "n": 100,
+        "q25": 21958.8,
+        "q75": 55708.0
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -208289.0,
+      "best_cost_improvement_in_window": 25620.6,
+      "expected_improvement": {
+        "mean": 10059.6,
+        "median": 10229.6,
+        "n": 100,
+        "q25": 8952.51,
+        "q75": 10569.0
+      },
+      "log_error_variance_correlation": 0.575197,
+      "new_configurations": 63,
+      "observed_cost": {
+        "mean": -183705.0,
+        "median": -185954.0,
+        "n": 100,
+        "q25": -198337.0,
+        "q75": -177994.0
+      },
+      "predicted_mean": {
+        "mean": -148068.0,
+        "median": -149502.0,
+        "n": 100,
+        "q25": -156123.0,
+        "q75": -139824.0
+      },
+      "prediction_variance": {
+        "mean": 4255500000.0,
+        "median": 4569150000.0,
+        "n": 100,
+        "q25": 3793700000.0,
+        "q75": 4831280000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.202188,
+        "median": 0.215266,
+        "n": 100,
+        "q25": 0.11785,
+        "q75": 0.269277
+      },
+      "trial_count": 100,
+      "trials": [
+        401,
+        500
+      ],
+      "unique_configurations": 64,
+      "window": 5
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 29161.0,
+        "median": 31754.8,
+        "n": 100,
+        "q25": 16523.4,
+        "q75": 38589.4
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -211958.0,
+      "best_cost_improvement_in_window": 3668.8,
+      "expected_improvement": {
+        "mean": 9369.26,
+        "median": 9610.32,
+        "n": 100,
+        "q25": 8524.96,
+        "q75": 10792.8
+      },
+      "log_error_variance_correlation": 0.585605,
+      "new_configurations": 65,
+      "observed_cost": {
+        "mean": -197561.0,
+        "median": -204976.0,
+        "n": 100,
+        "q25": -208747.0,
+        "q75": -188370.0
+      },
+      "predicted_mean": {
+        "mean": -173101.0,
+        "median": -170736.0,
+        "n": 100,
+        "q25": -178767.0,
+        "q75": -168273.0
+      },
+      "prediction_variance": {
+        "mean": 3293840000.0,
+        "median": 3362870000.0,
+        "n": 100,
+        "q25": 2780000000.0,
+        "q75": 3960720000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.149189,
+        "median": 0.152456,
+        "n": 100,
+        "q25": 0.0852093,
+        "q75": 0.184922
+      },
+      "trial_count": 100,
+      "trials": [
+        501,
+        600
+      ],
+      "unique_configurations": 66,
+      "window": 6
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 15330.0,
+        "median": 13911.3,
+        "n": 100,
+        "q25": 6646.27,
+        "q75": 21207.4
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -211958.0,
+      "best_cost_improvement_in_window": 0.0,
+      "expected_improvement": {
+        "mean": 5291.85,
+        "median": 5313.33,
+        "n": 100,
+        "q25": 4589.14,
+        "q75": 6094.23
+      },
+      "log_error_variance_correlation": 0.154831,
+      "new_configurations": 100,
+      "observed_cost": {
+        "mean": -174056.0,
+        "median": -178133.0,
+        "n": 100,
+        "q25": -187379.0,
+        "q75": -159736.0
+      },
+      "predicted_mean": {
+        "mean": -174685.0,
+        "median": -181471.0,
+        "n": 100,
+        "q25": -186980.0,
+        "q75": -163082.0
+      },
+      "prediction_variance": {
+        "mean": 1716790000.0,
+        "median": 1238430000.0,
+        "n": 100,
+        "q25": 812913000.0,
+        "q75": 2112950000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.0977965,
+        "median": 0.0744249,
+        "n": 100,
+        "q25": 0.0384717,
+        "q75": 0.130397
+      },
+      "trial_count": 100,
+      "trials": [
+        601,
+        700
+      ],
+      "unique_configurations": 100,
+      "window": 7
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 13996.9,
+        "median": 12337.2,
+        "n": 100,
+        "q25": 5095.1,
+        "q75": 21289.0
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -211958.0,
+      "best_cost_improvement_in_window": 0.0,
+      "expected_improvement": {
+        "mean": 4505.39,
+        "median": 4534.53,
+        "n": 100,
+        "q25": 3937.24,
+        "q75": 5035.61
+      },
+      "log_error_variance_correlation": 0.152695,
+      "new_configurations": 100,
+      "observed_cost": {
+        "mean": -171651.0,
+        "median": -172668.0,
+        "n": 100,
+        "q25": -189538.0,
+        "q75": -159199.0
+      },
+      "predicted_mean": {
+        "mean": -174157.0,
+        "median": -180494.0,
+        "n": 100,
+        "q25": -186817.0,
+        "q75": -162251.0
+      },
+      "prediction_variance": {
+        "mean": 1280650000.0,
+        "median": 745882000.0,
+        "n": 100,
+        "q25": 534376000.0,
+        "q75": 1904640000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.0901485,
+        "median": 0.073964,
+        "n": 100,
+        "q25": 0.0263912,
+        "q75": 0.124012
+      },
+      "trial_count": 100,
+      "trials": [
+        701,
+        800
+      ],
+      "unique_configurations": 100,
+      "window": 8
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 12466.6,
+        "median": 10718.0,
+        "n": 100,
+        "q25": 5473.6,
+        "q75": 17932.1
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -211958.0,
+      "best_cost_improvement_in_window": 0.0,
+      "expected_improvement": {
+        "mean": 3804.44,
+        "median": 3616.53,
+        "n": 100,
+        "q25": 3295.8,
+        "q75": 3957.74
+      },
+      "log_error_variance_correlation": 0.106268,
+      "new_configurations": 100,
+      "observed_cost": {
+        "mean": -171768.0,
+        "median": -176468.0,
+        "n": 100,
+        "q25": -187720.0,
+        "q75": -161275.0
+      },
+      "predicted_mean": {
+        "mean": -172249.0,
+        "median": -180830.0,
+        "n": 100,
+        "q25": -185207.0,
+        "q75": -158805.0
+      },
+      "prediction_variance": {
+        "mean": 1021380000.0,
+        "median": 578356000.0,
+        "n": 100,
+        "q25": 414384000.0,
+        "q75": 1553880000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.0768162,
+        "median": 0.0611072,
+        "n": 100,
+        "q25": 0.0303705,
+        "q75": 0.103593
+      },
+      "trial_count": 100,
+      "trials": [
+        801,
+        900
+      ],
+      "unique_configurations": 100,
+      "window": 9
+    },
+    {
+      "absolute_proxy_error": {
+        "mean": 11988.8,
+        "median": 10860.9,
+        "n": 100,
+        "q25": 5803.42,
+        "q75": 17595.1
+      },
+      "acquisition_diagnostic_rows": 100,
+      "best_config_mean_cost_at_end": -211958.0,
+      "best_cost_improvement_in_window": 0.0,
+      "expected_improvement": {
+        "mean": 3549.72,
+        "median": 3429.01,
+        "n": 100,
+        "q25": 3181.51,
+        "q75": 3790.23
+      },
+      "log_error_variance_correlation": 0.129443,
+      "new_configurations": 100,
+      "observed_cost": {
+        "mean": -177776.0,
+        "median": -186604.0,
+        "n": 100,
+        "q25": -195338.0,
+        "q75": -165635.0
+      },
+      "predicted_mean": {
+        "mean": -173357.0,
+        "median": -181182.0,
+        "n": 100,
+        "q25": -185094.0,
+        "q75": -170001.0
+      },
+      "prediction_variance": {
+        "mean": 896058000.0,
+        "median": 445180000.0,
+        "n": 100,
+        "q25": 336301000.0,
+        "q75": 1001360000.0
+      },
+      "relative_proxy_error": {
+        "mean": 0.0697499,
+        "median": 0.0610258,
+        "n": 100,
+        "q25": 0.0328093,
+        "q75": 0.097229
+      },
+      "trial_count": 100,
+      "trials": [
+        901,
+        1000
+      ],
+      "unique_configurations": 100,
+      "window": 10
+    }
+  ]
+}

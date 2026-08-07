@@ -1,0 +1,8 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.4,
+  "max_depth": 11,
+  "min_samples_leaf": 2,
+  "min_samples_split": 3,
+  "reason": "Tree depth utilization is 100% at current depth cap of 12, indicating trees are not grown beyond capacity. Reducing max_depth to 11 aims to constrain growth without losing accuracy. Lowering min_samples_split and leaf also promotes finer splits and helps address slight undercoverage seen (q90_std_error = 0.9052 > 1). feature_ratio decreased to 0.4 to counter overconfidence from high error-std correlation."
+}

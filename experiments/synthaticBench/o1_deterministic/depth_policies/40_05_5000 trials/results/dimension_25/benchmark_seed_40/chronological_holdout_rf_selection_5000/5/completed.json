@@ -1,0 +1,101 @@
+{
+  "identity": {
+    "benchmark_seed": 40,
+    "candidate_grid": [
+      {
+        "feature_ratio": 0.75,
+        "max_depth": 20000,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 0.9,
+        "max_depth": 20000,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 1.0,
+        "max_depth": 20000,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 0.75,
+        "max_depth": 20000,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 0.9,
+        "max_depth": 20000,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 1.0,
+        "max_depth": 20000,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 0.75,
+        "max_depth": 20000,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 0.9,
+        "max_depth": 20000,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "n_trees": 100
+      },
+      {
+        "feature_ratio": 1.0,
+        "max_depth": 20000,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "n_trees": 100
+      }
+    ],
+    "checkpoints": [
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500
+    ],
+    "default_rf_settings": {
+      "feature_ratio": 0.8333333333333334,
+      "max_depth": 20000,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_trees": 100
+    },
+    "deterministic": true,
+    "dimension": 25,
+    "experiment_version": 1,
+    "fixed_n_trees": 100,
+    "instance_seed": 0,
+    "n_instances": 10,
+    "n_trials": 5000,
+    "policy_type": "chronological_80_20_holdout",
+    "problem": "O1-DeterministicObjective",
+    "pythonhashseed": "12345",
+    "smac_seed": 5,
+    "study": "40_05_5000_trials"
+  },
+  "state": "complete"
+}

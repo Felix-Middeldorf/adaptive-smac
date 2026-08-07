@@ -405,6 +405,21 @@ class SurrogateTelemetryCallback(Callback):
             },
             "random_forest": {
                 "requested_max_depth": requested_depth,
+                "requested_min_samples_split": _json_safe(
+                    rf_options.get("min_samples_split")
+                ),
+                "requested_min_samples_leaf": _json_safe(
+                    rf_options.get("min_samples_leaf")
+                ),
+                "requested_feature_ratio": _json_safe(
+                    getattr(self._model, "_ratio_features", None)
+                ),
+                "requested_max_features": _json_safe(
+                    rf_options.get("max_features")
+                ),
+                "pca_components": _json_safe(
+                    getattr(self._model, "_pca_components", None)
+                ),
                 "fit_serial": self._fit_serial if model_is_trained else None,
                 "tree_count": 0,
                 "actual_tree_depths": [],
@@ -566,6 +581,25 @@ class SurrogateTelemetryCallback(Callback):
             "random_forest": {
                 "requested_max_depth": _json_safe(
                     getattr(self._model, "_rf_opts", {}).get("max_depth")
+                ),
+                "requested_min_samples_split": _json_safe(
+                    getattr(self._model, "_rf_opts", {}).get(
+                        "min_samples_split"
+                    )
+                ),
+                "requested_min_samples_leaf": _json_safe(
+                    getattr(self._model, "_rf_opts", {}).get(
+                        "min_samples_leaf"
+                    )
+                ),
+                "requested_feature_ratio": _json_safe(
+                    getattr(self._model, "_ratio_features", None)
+                ),
+                "requested_max_features": _json_safe(
+                    getattr(self._model, "_rf_opts", {}).get("max_features")
+                ),
+                "pca_components": _json_safe(
+                    getattr(self._model, "_pca_components", None)
                 ),
                 "fit_serial": None,
                 "tree_count": 0,

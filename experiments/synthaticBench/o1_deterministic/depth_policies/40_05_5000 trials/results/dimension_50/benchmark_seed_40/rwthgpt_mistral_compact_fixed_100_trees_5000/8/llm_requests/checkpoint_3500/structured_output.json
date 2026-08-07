@@ -1,0 +1,8 @@
+{
+  "confidence": 0.63,
+  "feature_ratio": 0.64,
+  "max_depth": 16,
+  "min_samples_leaf": 2,
+  "min_samples_split": 5,
+  "reason": "Reduce max_depth to 16 to tighten constraints indicated by 100% fraction_trees_exactly_at_depth_cap while lowering min_samples_leaf to 2 to avoid over-constraining splits given low coverage within 1 std (95.6%) and median error exceeding 1 std; elevate feature_ratio to 0.64 to introduce more diversity in surrogate splits."
+}

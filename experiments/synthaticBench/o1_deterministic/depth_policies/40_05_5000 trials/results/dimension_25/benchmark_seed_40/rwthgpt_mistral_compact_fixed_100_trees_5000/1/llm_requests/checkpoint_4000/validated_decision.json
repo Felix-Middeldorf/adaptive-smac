@@ -1,0 +1,9 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.3,
+  "max_depth": 8,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "n_trees": 100,
+  "reason": "Trees consistently hit depth cap (100% at cap), suggesting reduced max_depth not needed; reward splitting to reduce bias, lower leaf samples for granularity, and decreased feature_ratio for variance reduction given low error-std correlation (0.226) and high coverage (>90% within 1 std)."
+}

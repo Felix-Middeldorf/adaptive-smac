@@ -1,0 +1,9 @@
+{
+  "confidence": 0.61,
+  "feature_ratio": 0.7,
+  "max_depth": 18,
+  "min_samples_leaf": 1,
+  "min_samples_split": 2,
+  "n_trees": 30,
+  "reason": "The RF is underfitting early but becomes much more accurate later; tree depths are far below the cap, so a modestly larger ensemble with slightly deeper trees and lower leaf/split regularization should improve flexibility while keeping variance in check. Reducing feature_ratio a bit may help search in 50D."
+}

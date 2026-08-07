@@ -1,0 +1,8 @@
+{
+  "confidence": 0.8,
+  "feature_ratio": 0.7,
+  "max_depth": 11,
+  "min_samples_leaf": 2,
+  "min_samples_split": 5,
+  "reason": "Reduce max_depth to 11 to slightly constrain tree growth while maintaining coverage at 1 std (0.926). Increase min_samples_split to 5 and min_samples_leaf to 2 to reduce overfitting observed in recent windows. Lower feature_ratio to 0.7 to focus on more relevant splits amidst increasing optimization complexity."
+}

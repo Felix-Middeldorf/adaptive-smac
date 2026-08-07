@@ -977,12 +977,32 @@ def plot_selected_seed_diagnostics(
     bundle: AnalysisBundle,
     *,
     selected_seed: int,
+    start_trial: int = 1,
+    rolling_window: int | None = None,
     colors: Mapping[int, str] | None = None,
 ) -> Any:
     import matplotlib.pyplot as plt
 
     if selected_seed not in SMAC_SEEDS:
         raise ValueError(f"selected_seed must be one of {SMAC_SEEDS}.")
+    if start_trial < 1 or start_trial > bundle.n_trials:
+        raise ValueError(
+            f"start_trial must be between 1 and {bundle.n_trials}."
+        )
+    if rolling_window is not None and rolling_window < 1:
+        raise ValueError("rolling_window must be positive or None.")
+
+    def running_mean(values: Any) -> np.ndarray:
+        array = np.asarray(values, dtype=float)
+        if rolling_window is None:
+            return array
+        return (
+            pd.Series(array)
+            .rolling(window=rolling_window, min_periods=1)
+            .mean()
+            .to_numpy()
+        )
+
     colors = dict(colors or default_depth_colors())
     figure, axes = plt.subplots(
         8,
@@ -1000,64 +1020,58 @@ def plot_selected_seed_diagnostics(
 
     for depth in DEPTHS:
         color = colors[depth]
-        axes[0].step(
-            trials,
+        incumbent = running_mean(
             trajectory_series(
                 bundle.trajectory_events,
                 depth,
                 selected_seed,
                 n_trials=bundle.n_trials,
-            ),
-            where="post",
+            )
+        )
+        incumbent_mask = trials >= start_trial
+        incumbent_plot = axes[0].step if rolling_window is None else axes[0].plot
+        incumbent_keywords = (
+            {"where": "post"} if rolling_window is None else {}
+        )
+        incumbent_plot(
+            trials[incumbent_mask],
+            incumbent[incumbent_mask],
             color=color,
             label=f"depth {depth}",
+            **incumbent_keywords,
         )
         selected = diagnostics[
             diagnostics["depth"] == depth
         ].sort_values("proposal_trial")
-        x = selected["proposal_trial"]
-        axes[1].plot(
-            x,
-            selected["expected_improvement"],
-            color=color,
-            alpha=0.8,
+        x = selected["proposal_trial"].to_numpy(dtype=int)
+        proposal_mask = x >= start_trial
+        proposal_columns = (
+            "expected_improvement",
+            "predicted_full_training_par10",
+            "prediction_variance",
+            "absolute_error",
+            "standardized_error",
+            "average_actual_tree_depth",
         )
-        axes[2].plot(
-            x,
-            selected["predicted_full_training_par10"],
-            color=color,
-            alpha=0.8,
-        )
-        axes[3].plot(
-            x,
-            selected["prediction_variance"],
-            color=color,
-            alpha=0.8,
-        )
-        axes[4].plot(
-            x,
-            selected["absolute_error"],
-            color=color,
-            alpha=0.8,
-        )
-        axes[5].plot(
-            x,
-            selected["standardized_error"],
-            color=color,
-            alpha=0.8,
-        )
-        axes[6].plot(
-            x,
-            selected["average_actual_tree_depth"],
-            color=color,
-            alpha=0.8,
-        )
+        for axis, column in zip(axes[1:7], proposal_columns):
+            values = running_mean(selected[column])
+            axis.plot(
+                x[proposal_mask],
+                values[proposal_mask],
+                color=color,
+                alpha=0.8,
+            )
         selected_batches = batch_variance[
             batch_variance["depth"] == depth
         ].sort_values("model_training_rows")
+        batch_x = selected_batches["model_training_rows"].to_numpy(dtype=int)
+        batch_mask = batch_x >= start_trial
+        batch_values = running_mean(
+            selected_batches["selected_proposal_ei_variance"]
+        )
         axes[7].plot(
-            selected_batches["model_training_rows"],
-            selected_batches["selected_proposal_ei_variance"],
+            batch_x[batch_mask],
+            batch_values[batch_mask],
             color=color,
             marker=".",
             markersize=3,
@@ -1096,10 +1110,17 @@ def plot_selected_seed_diagnostics(
     axes[7].set_yscale("symlog", linthresh=1e-12)
     axes[7].set_xlabel("Completed SMAC trial")
     for axis in axes:
+        axis.set_xlim(start_trial, bundle.n_trials)
         axis.grid(alpha=0.22)
+    smoothing_label = (
+        "raw values"
+        if rolling_window is None
+        else f"running mean over the last {rolling_window} observations"
+    )
     figure.suptitle(
         f"{bundle.display_name}: aligned diagnostics for SMAC seed "
-        f"{selected_seed}",
+        f"{selected_seed}, trials {start_trial}–{bundle.n_trials}, "
+        f"{smoothing_label}",
         y=0.995,
         fontsize=15,
     )

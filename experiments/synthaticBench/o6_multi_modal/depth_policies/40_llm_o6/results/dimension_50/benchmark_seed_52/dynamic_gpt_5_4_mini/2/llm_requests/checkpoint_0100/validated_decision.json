@@ -1,0 +1,9 @@
+{
+  "confidence": 0.63,
+  "feature_ratio": 0.7,
+  "max_depth": 14,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "n_trees": 20,
+  "reason": "Recent trees were shallow despite max_depth=20, suggesting the model is not using the depth cap; slightly more trees and moderate regularization should stabilize predictions while allowing enough flexibility. Reducing feature_ratio modestly can increase diversity and may help with 50D continuous space."
+}

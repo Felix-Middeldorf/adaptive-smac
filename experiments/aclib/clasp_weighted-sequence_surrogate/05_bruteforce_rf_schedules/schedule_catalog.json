@@ -1,0 +1,1579 @@
+{
+  "checkpoints": [
+    500,
+    2000
+  ],
+  "depths": [
+    5,
+    10,
+    15,
+    20,
+    30
+  ],
+  "feature_ratios": [
+    0.3,
+    0.5,
+    0.8333333333333334,
+    1.0
+  ],
+  "min_samples_leaf": 1,
+  "n_trees": 100,
+  "pca_components": 4,
+  "schedules": [
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 0,
+      "name": "schedule_00",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 1,
+      "name": "schedule_01",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 2,
+      "name": "schedule_02",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 3,
+      "name": "schedule_03",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 4,
+      "name": "schedule_04",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 5,
+      "name": "schedule_05",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 6,
+      "name": "schedule_06",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 7,
+      "name": "schedule_07",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 8,
+      "name": "schedule_08",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 9,
+      "name": "schedule_09",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 10,
+      "name": "schedule_10",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 11,
+      "name": "schedule_11",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 12,
+      "name": "schedule_12",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 13,
+      "name": "schedule_13",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 14,
+      "name": "schedule_14",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 15,
+      "name": "schedule_15",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 16,
+      "name": "schedule_16",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 17,
+      "name": "schedule_17",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 18,
+      "name": "schedule_18",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 19,
+      "name": "schedule_19",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 20,
+      "name": "schedule_20",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 21,
+      "name": "schedule_21",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 22,
+      "name": "schedule_22",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 23,
+      "name": "schedule_23",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 24,
+      "name": "schedule_24",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 25,
+      "name": "schedule_25",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 26,
+      "name": "schedule_26",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 27,
+      "name": "schedule_27",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 28,
+      "name": "schedule_28",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 29,
+      "name": "schedule_29",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 30,
+      "name": "schedule_30",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 31,
+      "name": "schedule_31",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 32,
+      "name": "schedule_32",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 33,
+      "name": "schedule_33",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 34,
+      "name": "schedule_34",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 35,
+      "name": "schedule_35",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 36,
+      "name": "schedule_36",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 37,
+      "name": "schedule_37",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 38,
+      "name": "schedule_38",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 39,
+      "name": "schedule_39",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 40,
+      "name": "schedule_40",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 41,
+      "name": "schedule_41",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 42,
+      "name": "schedule_42",
+      "phases": [
+        {
+          "depth": 10,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 43,
+      "name": "schedule_43",
+      "phases": [
+        {
+          "depth": 30,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 44,
+      "name": "schedule_44",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 45,
+      "name": "schedule_45",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 46,
+      "name": "schedule_46",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 1.0,
+          "min_samples_split": 8,
+          "start_trial": 0
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.5,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 47,
+      "name": "schedule_47",
+      "phases": [
+        {
+          "depth": 15,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.3,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 30,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 500
+        },
+        {
+          "depth": 15,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.3,
+          "min_samples_split": 8,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 48,
+      "name": "schedule_48",
+      "phases": [
+        {
+          "depth": 5,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.5,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 10,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 1.0,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    },
+    {
+      "checkpoints": [
+        500,
+        2000
+      ],
+      "index": 49,
+      "name": "schedule_49",
+      "phases": [
+        {
+          "depth": 20,
+          "end_trial_exclusive": 500,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 2,
+          "start_trial": 0
+        },
+        {
+          "depth": 20,
+          "end_trial_exclusive": 2000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 500
+        },
+        {
+          "depth": 5,
+          "end_trial_exclusive": 5000,
+          "feature_ratio": 0.8333333333333334,
+          "min_samples_split": 4,
+          "start_trial": 2000
+        }
+      ]
+    }
+  ],
+  "split_sizes": [
+    2,
+    4,
+    8
+  ]
+}

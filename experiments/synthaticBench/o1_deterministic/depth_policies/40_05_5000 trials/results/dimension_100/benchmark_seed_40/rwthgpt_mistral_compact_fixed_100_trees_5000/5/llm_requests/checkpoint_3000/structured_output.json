@@ -1,0 +1,8 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.5,
+  "max_depth": 25,
+  "min_samples_leaf": 1,
+  "min_samples_split": 3,
+  "reason": "Capacity-and-calibration constraints tighten: 99.88 % of trees already cap at max_depth=20, so raising to 25 maintains genuine depth constraint; lower feature_ratio=0.5 reduces node purity vs earlier 0.9, while smaller split/leaf thresholds increase candidate-split exploration and cover wider input space observed in recent-window estimation errors."
+}

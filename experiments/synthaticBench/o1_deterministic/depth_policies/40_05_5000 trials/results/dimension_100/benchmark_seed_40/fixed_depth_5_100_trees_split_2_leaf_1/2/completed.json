@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "benchmark_seed": 40,
+    "checkpoints": [
+      100,
+      250,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500
+    ],
+    "default_rf_settings": {
+      "feature_ratio": 0.8333333333333334,
+      "max_depth": 5,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_trees": 100
+    },
+    "deterministic": true,
+    "diagnostic_sample_size": 100,
+    "dimension": 100,
+    "experiment_version": 1,
+    "fixed_n_trees": 100,
+    "instance_seed": 0,
+    "n_instances": 10,
+    "n_trials": 5000,
+    "openai_model": "gpt-5.6-terra",
+    "openai_reasoning_effort": "medium",
+    "pca_components": 4,
+    "problem": "O1-DeterministicObjective",
+    "pythonhashseed": "12345",
+    "random_design_probability": 0.0,
+    "rf_policy_type": "fixed_depth_5_100_trees_split_2_leaf_1",
+    "smac_seed": 2,
+    "study": "40_05_5000_trials"
+  },
+  "state": "complete"
+}

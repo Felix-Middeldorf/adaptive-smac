@@ -1,0 +1,9 @@
+{
+  "confidence": 0.88,
+  "feature_ratio": 0.65,
+  "max_depth": 20,
+  "min_samples_leaf": 2,
+  "min_samples_split": 3,
+  "n_trees": 100,
+  "reason": "Increased max_depth to 20 to explore deeper constrained trees (current median depth=15, cap=100% at 15). Lower min_samples_split/leaf to allow more splits while maintaining signal fidelity. Adjusted feature_ratio to balance variance/bias under low error_std_correlation (0.21)."
+}

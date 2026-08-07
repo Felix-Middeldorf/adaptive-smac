@@ -19,7 +19,6 @@ from fixed_depth_experiment import (
     MIN_SAMPLES_SPLIT,
     N_TRIALS,
     N_TREES,
-    PCA_COMPONENTS,
     RANDOM_DESIGN_PROBABILITY,
     Scenario,
     SMAC_SEEDS,
@@ -138,6 +137,7 @@ def print_summary(
     print(f"Total SMAC runs / Slurm jobs: {len(jobs)}")
     print(f"Time limit per job: {TIMEOUT_MIN} minutes")
     print(f"Memory per job: {MEM_GB} GB")
+    print(f"RF PCA components: {definition.pca_components}")
     print(f"Slurm account: {SLURM_ACCOUNT}")
     print(f"Worker PYTHONHASHSEED: {PYTHONHASHSEED}")
     print(f"Slurm job name: {slurm_parameters(definition)['slurm_job_name']}")
@@ -203,7 +203,7 @@ def smoke_check(definition: ExperimentDefinition) -> None:
         max_depth=DEPTHS[0],
         min_samples_split=MIN_SAMPLES_SPLIT,
         min_samples_leaf=MIN_SAMPLES_LEAF,
-        pca_components=PCA_COMPONENTS,
+        pca_components=definition.pca_components,
     )
     random_design = AlgorithmConfigurationFacade.get_random_design(
         scenario,
@@ -227,7 +227,7 @@ def smoke_check(definition: ExperimentDefinition) -> None:
     assert model.meta["n_estimators"] == 100
     assert model.meta["min_samples_split"] == 1
     assert model.meta["min_samples_leaf"] == 1
-    assert model.meta["pca_components"] is None
+    assert model.meta["pca_components"] == definition.pca_components
     assert random_design.meta["probability"] == 0.0
     parameters = slurm_parameters(definition)
     assert parameters["slurm_account"] == "lect0190"
@@ -242,7 +242,10 @@ def smoke_check(definition: ExperimentDefinition) -> None:
         f"{len(data.training_instances)} training and 0 test instances."
     )
     print(f"PASS: initial configuration kind is {choice.kind}.")
-    print("PASS: RF trees=100, split=1, leaf=1, PCA=None; random design=0%.")
+    print(
+        "PASS: RF trees=100, split=1, leaf=1, "
+        f"PCA={definition.pca_components}; random design=0%."
+    )
     print("PASS: Slurm account=lect0190 and worker PYTHONHASHSEED=0.")
     print(f"PASS: local SMAC imported from {metadata['module']}.")
 

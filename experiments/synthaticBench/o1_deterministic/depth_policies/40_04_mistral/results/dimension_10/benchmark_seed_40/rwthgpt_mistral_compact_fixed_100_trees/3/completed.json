@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "benchmark_seed": 40,
+    "checkpoints": [
+      100,
+      250,
+      500
+    ],
+    "default_rf_settings": {
+      "feature_ratio": 0.8333333333333334,
+      "max_depth": 20,
+      "min_samples_leaf": 3,
+      "min_samples_split": 3,
+      "n_trees": 100
+    },
+    "deterministic": true,
+    "diagnostic_sample_size": 100,
+    "dimension": 10,
+    "experiment_version": 1,
+    "fixed_n_trees": 100,
+    "instance_seed": 0,
+    "llm_provider": "rwthgpt",
+    "model_selectable_hyperparameters": [
+      "max_depth",
+      "min_samples_split",
+      "min_samples_leaf",
+      "feature_ratio"
+    ],
+    "n_instances": 10,
+    "n_trials": 1000,
+    "openai_model": "mistralai-mistral-small-4-119b",
+    "openai_reasoning_effort": null,
+    "pca_components": 4,
+    "problem": "O1-DeterministicObjective",
+    "pythonhashseed": "12345",
+    "random_design_probability": 0.0,
+    "rwthgpt_model": "mistralai-mistral-small-4-119b",
+    "smac_seed": 3,
+    "summary_mode": "ten_window_compact_aggregates"
+  },
+  "state": "complete"
+}

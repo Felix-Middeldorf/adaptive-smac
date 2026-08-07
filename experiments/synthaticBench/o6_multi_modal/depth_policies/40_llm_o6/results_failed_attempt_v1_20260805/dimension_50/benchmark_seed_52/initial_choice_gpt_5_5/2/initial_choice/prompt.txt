@@ -1,0 +1,19 @@
+Before any evaluations, select one fixed random-forest surrogate
+configuration for the entire upcoming SMAC run. No objective observations are
+available. Use only the known configuration-space information below. The
+objective is deterministic and lower values are better.
+
+Choose the next random-forest settings only from these ranges:
+- n_trees: integer in [1, 100]
+- max_depth: integer in [1, 30]
+- min_samples_split: integer in [2, 10]
+- min_samples_leaf: integer in [1, 10]
+- feature_ratio: real number in (0, 1]
+
+Return exactly one JSON object with these keys and no others:
+{"n_trees": integer, "max_depth": integer, "min_samples_split": integer,
+  "min_samples_leaf": integer, "feature_ratio": number,
+  "confidence": number from 0 to 1, "reason": concise string}
+
+DATA
+{"configuration_space":{"conditionals":false,"deterministic_objective":true,"forbidden_combinations":false,"hierarchy":"none; every parameter is always active","objective_direction":"minimize","parameter_type":"continuous real-valued","parameters":{"count":50,"default":1.0,"lower_bound":-600.0,"name_pattern":"x_0 through x_{dimension_minus_1}","upper_bound":600.0},"total_dimensions":50},"initial_random_configurations":10,"n_instances":10,"n_trials":1000,"selection_mode":"before_first_evaluation_fixed_for_entire_run"}

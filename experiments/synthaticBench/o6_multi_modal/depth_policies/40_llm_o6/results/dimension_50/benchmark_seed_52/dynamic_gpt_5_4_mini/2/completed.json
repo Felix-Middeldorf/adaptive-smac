@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "benchmark_seed": 52,
+    "checkpoints": [
+      100,
+      250,
+      500
+    ],
+    "dimension": 50,
+    "experiment": "o6_llm_dynamic",
+    "experiment_version": 2,
+    "initial_design": "random",
+    "initial_rf_settings": {
+      "feature_ratio": 0.8333333333333334,
+      "max_depth": 20,
+      "min_samples_leaf": 3,
+      "min_samples_split": 3,
+      "n_trees": 10
+    },
+    "instance_seed": 0,
+    "n_initial_configs": 10,
+    "n_instances": 10,
+    "n_trials": 1000,
+    "pca_components": 4,
+    "pythonhashseed": "12345",
+    "random_design_probability": 0.0,
+    "rf_setting_ranges": {
+      "feature_ratio": [
+        0.0,
+        1.0
+      ],
+      "max_depth": [
+        1,
+        30
+      ],
+      "min_samples_leaf": [
+        1,
+        10
+      ],
+      "min_samples_split": [
+        2,
+        10
+      ],
+      "n_trees": [
+        1,
+        100
+      ]
+    },
+    "rwthgpt_model": "gpt-5.4-mini",
+    "smac_seed": 2
+  },
+  "state": "complete"
+}

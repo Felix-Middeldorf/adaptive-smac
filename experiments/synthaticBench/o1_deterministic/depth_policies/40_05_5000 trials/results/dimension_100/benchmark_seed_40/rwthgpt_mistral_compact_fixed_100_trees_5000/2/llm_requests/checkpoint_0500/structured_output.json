@@ -1,0 +1,8 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.7,
+  "max_depth": 7,
+  "min_samples_leaf": 2,
+  "min_samples_split": 5,
+  "reason": "Lower max_depth and min_samples_split to slightly constrain tree growth; higher feature_ratio to reduce variance. Previous fits show high depth utilization and 85% of trees at cap, suggesting capacity for deeper trees exists but may not help calibration (error_std_correlation: 0.20)."
+}

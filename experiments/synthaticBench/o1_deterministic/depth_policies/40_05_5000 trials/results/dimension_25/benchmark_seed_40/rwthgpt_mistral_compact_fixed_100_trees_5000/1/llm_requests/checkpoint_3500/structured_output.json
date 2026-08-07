@@ -1,0 +1,8 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.4,
+  "max_depth": 8,
+  "min_samples_leaf": 3,
+  "min_samples_split": 5,
+  "reason": "Balances depth constraints (100% trees at cap) with moderate leaf/split sizes to improve calibration (coverage 0.92, error-std correlation 0.22) while avoiding overfitting seen in deeper trees (e.g., max_depth=10) with higher feature exploitation (0.4) for 25D input."
+}

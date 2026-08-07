@@ -1,0 +1,9 @@
+{
+  "confidence": 0.78,
+  "feature_ratio": 0.4,
+  "max_depth": 14,
+  "min_samples_leaf": 1,
+  "min_samples_split": 2,
+  "n_trees": 100,
+  "reason": "Lower min_samples_split/leaf to reduce overfitting observed in recent windows (proxy error 13-14k). Feature ratio 0.4 balances diverse splits without heavy randomness. Depth 14 (ref. 16) slightly reduces complexity but maintains tree depth control (fraction_at_cap=1.0)."
+}

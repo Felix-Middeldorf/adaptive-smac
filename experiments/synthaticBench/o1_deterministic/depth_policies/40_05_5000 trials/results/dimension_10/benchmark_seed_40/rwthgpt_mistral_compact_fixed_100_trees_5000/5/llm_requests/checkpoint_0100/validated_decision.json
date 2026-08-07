@@ -1,0 +1,9 @@
+{
+  "confidence": 0.8,
+  "feature_ratio": 0.4,
+  "max_depth": 4,
+  "min_samples_leaf": 5,
+  "min_samples_split": 7,
+  "n_trees": 100,
+  "reason": "Low depth to reduce overfitting; higher min_samples_split/leaf to stabilize predictions. Lower feature_ratio for variable importance robustness. Calibration shows confident but often wrong predictions (error_std_correlation=-0.375), suggesting conservative models may help."
+}

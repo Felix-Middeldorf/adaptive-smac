@@ -1,0 +1,9 @@
+{
+  "confidence": 0.88,
+  "feature_ratio": 0.7,
+  "max_depth": 25,
+  "min_samples_leaf": 1,
+  "min_samples_split": 5,
+  "n_trees": 100,
+  "reason": "Increased max_depth and feature_ratio to leverage deeper trees (high depth_utilization=1.0) while maintaining uncertainty calibration (error_std_correlation=0.35, coverage within 1-2 std close to target). Lower min_samples_leaf reduces bias to improve generalization."
+}

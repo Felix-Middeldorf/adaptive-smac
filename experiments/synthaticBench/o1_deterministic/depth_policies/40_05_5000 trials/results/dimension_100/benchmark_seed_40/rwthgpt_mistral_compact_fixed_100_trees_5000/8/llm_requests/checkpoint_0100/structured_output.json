@@ -1,0 +1,8 @@
+{
+  "confidence": 0.75,
+  "feature_ratio": 0.6,
+  "max_depth": 5,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "reason": "Trees rarely reach current max_depth 20 (median depth 5); reducing max_depth to 5 while lowering min_samples_split/leaf balances depth utilization and coverage (low 0.316/1std, moderate 0.806/2std). Lower feature_ratio 0.6 counters high dimensionality (100 params), with moderate confidence given improving error-std correlation trends."
+}

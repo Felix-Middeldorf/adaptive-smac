@@ -1,0 +1,9 @@
+{
+  "confidence": 0.85,
+  "feature_ratio": 0.6,
+  "max_depth": 8,
+  "min_samples_leaf": 2,
+  "min_samples_split": 5,
+  "n_trees": 100,
+  "reason": "Low depth (8) to limit overfitting and improve calibration; min_samples_split=5 and min_samples_leaf=2 to enhance robustness against node splits/leaves. feature_ratio=0.6 balances feature diversity and model variance, addressing EI uncertainty. Calibration metrics (low error_std_correlation) suggest cautious, shallower trees."
+}

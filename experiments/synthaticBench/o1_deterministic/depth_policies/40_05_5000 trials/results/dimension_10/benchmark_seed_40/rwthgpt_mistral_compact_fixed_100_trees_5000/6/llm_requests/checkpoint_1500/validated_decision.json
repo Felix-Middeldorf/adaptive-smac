@@ -1,0 +1,9 @@
+{
+  "confidence": 0.7,
+  "feature_ratio": 0.7,
+  "max_depth": 20,
+  "min_samples_leaf": 3,
+  "min_samples_split": 4,
+  "n_trees": 100,
+  "reason": "Deeper trees risk overfitting; lowering max_depth (from 25) balances bias-variance. Reducing min_samples_split/leaf improves leaf purity while sparse features (0.7 ratio) stabilize predictions under calibration gaps."
+}

@@ -1,0 +1,9 @@
+{
+  "confidence": 0.9,
+  "feature_ratio": 0.6,
+  "max_depth": 16,
+  "min_samples_leaf": 3,
+  "min_samples_split": 5,
+  "n_trees": 100,
+  "reason": "High depth cap (16) aligns with trees consistently hitting depth limit (fraction_at_cap=1.0). Increased min_samples_split/leaf (5/3) to reduce overfitting as standardized error correlation (~0.55) and coverage (>0.87 within 1\u03c3) suggest room for variance reduction. Feature ratio (0.6) balances diversity and signal."
+}

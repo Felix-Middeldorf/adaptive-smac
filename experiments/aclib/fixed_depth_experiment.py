@@ -69,6 +69,11 @@ class ExperimentDefinition:
     directory: Path
     initial_directory: Path | None = None
     deterministic: bool | None = None
+    pca_components: int | None = PCA_COMPONENTS
+
+    def __post_init__(self) -> None:
+        if self.pca_components is not None and self.pca_components < 1:
+            raise ValueError("pca_components must be positive or None.")
 
     @property
     def output_root(self) -> Path:
@@ -430,7 +435,7 @@ def _run_locked(
             "max_depth": int(depth),
             "min_samples_split": MIN_SAMPLES_SPLIT,
             "min_samples_leaf": MIN_SAMPLES_LEAF,
-            "pca_components": PCA_COMPONENTS,
+            "pca_components": definition.pca_components,
         },
         "random_design_probability": RANDOM_DESIGN_PROBABILITY,
     }
@@ -500,7 +505,7 @@ def _run_locked(
         max_depth=depth,
         min_samples_split=MIN_SAMPLES_SPLIT,
         min_samples_leaf=MIN_SAMPLES_LEAF,
-        pca_components=PCA_COMPONENTS,
+        pca_components=definition.pca_components,
     )
     random_design = AlgorithmConfigurationFacade.get_random_design(
         scenario,

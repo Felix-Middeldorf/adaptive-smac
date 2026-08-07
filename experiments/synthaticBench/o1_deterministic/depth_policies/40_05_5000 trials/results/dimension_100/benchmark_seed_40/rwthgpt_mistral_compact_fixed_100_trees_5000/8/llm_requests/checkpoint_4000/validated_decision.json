@@ -1,0 +1,9 @@
+{
+  "confidence": 0.87,
+  "feature_ratio": 0.55,
+  "max_depth": 24,
+  "min_samples_leaf": 1,
+  "min_samples_split": 3,
+  "n_trees": 100,
+  "reason": "Increasing depth marginally to 24 to slightly relax constraints (as 99.94% of trees already hit cap). Lowering min_samples_split to 3 and min_samples_leaf to 1 to seek finer splits. feature_ratio reduced to 0.55 to increase variance reduction per tree, while maintaining moderate diversity. High calibration ratios (coverage, low error_std_correlation) justify moderate confidence."
+}

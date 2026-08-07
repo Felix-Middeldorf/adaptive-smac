@@ -1,0 +1,1447 @@
+{
+  "current_settings": {
+    "feature_ratio": 0.5,
+    "max_depth": 15,
+    "min_samples_leaf": 2,
+    "min_samples_split": 5,
+    "n_trees": 100
+  },
+  "decisions": {
+    "100": {
+      "actual_completed_trials_at_call": 108,
+      "checkpoint": 100,
+      "confidence": 0.85,
+      "elapsed_seconds": 1.3397532920353115,
+      "model": "mistralai/Mistral-Small-4-119B-2603",
+      "reason": "High prediction variance and large API errors suggest overfitting; reducing depth and increasing min samples to balance bias-variance trade-off.",
+      "request_sha256": "b015ea0c954d94a43e071dcf2cdbf85718d489bc61df52c6c5fb518a6ba05283",
+      "response_id": "chatcmpl-91976ab3fa467eb0",
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "usage": {
+        "completion_tokens": 77,
+        "completion_tokens_details": null,
+        "prompt_tokens": 14099,
+        "prompt_tokens_details": null,
+        "total_tokens": 14176
+      }
+    },
+    "250": {
+      "actual_completed_trials_at_call": 254,
+      "checkpoint": 250,
+      "confidence": 0.75,
+      "elapsed_seconds": 34.491386567242444,
+      "model": "mistralai/Mistral-Small-4-119B-2603",
+      "reason": "Balanced tree depth and sample sizes to reduce overfitting to extreme-cost configurations while maintaining close-to-average predictive power.",
+      "request_sha256": "ae1909fd72119fc6be3c806ce7baf1c1cc09f646d5ba99d40366c762799c67b8",
+      "response_id": "chatcmpl-97480e716bf0ee6e",
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "usage": {
+        "completion_tokens": 75,
+        "completion_tokens_details": null,
+        "prompt_tokens": 34640,
+        "prompt_tokens_details": null,
+        "total_tokens": 34715
+      }
+    },
+    "500": {
+      "actual_completed_trials_at_call": 500,
+      "checkpoint": 500,
+      "confidence": 0.85,
+      "elapsed_seconds": 3.6069989632815123,
+      "model": "mistralai/Mistral-Small-4-119B-2603",
+      "reason": "Relative proxy error and expected improvement seem sensitive to min_samples_split and feature_ratio. Current max_depth=10 appears too small for remaining error margin.",
+      "request_sha256": "a10c5068327f58f5e538457e39262cb5649299c929114c5ca418672ec87df5da",
+      "response_id": "chatcmpl-b66d47bbea048a3e",
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "usage": {
+        "completion_tokens": 80,
+        "completion_tokens_details": null,
+        "prompt_tokens": 69006,
+        "prompt_tokens_details": null,
+        "total_tokens": 69086
+      }
+    }
+  },
+  "fit_observations": [
+    {
+      "actual_tree_depth_max": 0,
+      "actual_tree_depth_mean": 0.0,
+      "actual_tree_depth_min": 0,
+      "depth_utilization": 0.0,
+      "fit_duration_seconds": 3.504886662121862,
+      "fit_index": 0,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 2
+    },
+    {
+      "actual_tree_depth_max": 2,
+      "actual_tree_depth_mean": 1.96,
+      "actual_tree_depth_min": 1,
+      "depth_utilization": 0.098,
+      "fit_duration_seconds": 3.4982344447635114,
+      "fit_index": 1,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 24
+    },
+    {
+      "actual_tree_depth_max": 4,
+      "actual_tree_depth_mean": 3.08,
+      "actual_tree_depth_min": 2,
+      "depth_utilization": 0.154,
+      "fit_duration_seconds": 3.4521501436829567,
+      "fit_index": 2,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 32
+    },
+    {
+      "actual_tree_depth_max": 5,
+      "actual_tree_depth_mean": 3.8,
+      "actual_tree_depth_min": 3,
+      "depth_utilization": 0.19,
+      "fit_duration_seconds": 3.4414618420414627,
+      "fit_index": 3,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 40
+    },
+    {
+      "actual_tree_depth_max": 6,
+      "actual_tree_depth_mean": 4.33,
+      "actual_tree_depth_min": 3,
+      "depth_utilization": 0.2165,
+      "fit_duration_seconds": 3.325275124050677,
+      "fit_index": 4,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 66
+    },
+    {
+      "actual_tree_depth_max": 7,
+      "actual_tree_depth_mean": 5.18,
+      "actual_tree_depth_min": 4,
+      "depth_utilization": 0.259,
+      "fit_duration_seconds": 3.037163677159697,
+      "fit_index": 5,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "training_rows": 92
+    },
+    {
+      "actual_tree_depth_max": 7,
+      "actual_tree_depth_mean": 6.07,
+      "actual_tree_depth_min": 5,
+      "depth_utilization": 0.4046666666666667,
+      "fit_duration_seconds": 3.1018209950998425,
+      "fit_index": 6,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 118
+    },
+    {
+      "actual_tree_depth_max": 9,
+      "actual_tree_depth_mean": 7.28,
+      "actual_tree_depth_min": 6,
+      "depth_utilization": 0.48533333333333334,
+      "fit_duration_seconds": 3.211028228048235,
+      "fit_index": 7,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 153
+    },
+    {
+      "actual_tree_depth_max": 12,
+      "actual_tree_depth_mean": 8.26,
+      "actual_tree_depth_min": 7,
+      "depth_utilization": 0.5506666666666666,
+      "fit_duration_seconds": 3.167058994062245,
+      "fit_index": 8,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 179
+    },
+    {
+      "actual_tree_depth_max": 12,
+      "actual_tree_depth_mean": 9.23,
+      "actual_tree_depth_min": 7,
+      "depth_utilization": 0.6153333333333334,
+      "fit_duration_seconds": 3.1370969591662288,
+      "fit_index": 9,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 214
+    },
+    {
+      "actual_tree_depth_max": 13,
+      "actual_tree_depth_mean": 9.32,
+      "actual_tree_depth_min": 8,
+      "depth_utilization": 0.6213333333333334,
+      "fit_duration_seconds": 3.114632065873593,
+      "fit_index": 10,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 231
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.06,
+      "actual_tree_depth_min": 7,
+      "depth_utilization": 0.906,
+      "fit_duration_seconds": 2.5345984529703856,
+      "fit_index": 11,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 266
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.62,
+      "actual_tree_depth_min": 8,
+      "depth_utilization": 0.962,
+      "fit_duration_seconds": 3.0641722390428185,
+      "fit_index": 12,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 283
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.78,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.978,
+      "fit_duration_seconds": 2.9519360694102943,
+      "fit_index": 13,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 300
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.96,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.9960000000000001,
+      "fit_duration_seconds": 3.001607669983059,
+      "fit_index": 14,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 308
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.96,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.9960000000000001,
+      "fit_duration_seconds": 2.9977099034003913,
+      "fit_index": 15,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 316
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.98,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.998,
+      "fit_duration_seconds": 3.119128042832017,
+      "fit_index": 16,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 324
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.97,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.9970000000000001,
+      "fit_duration_seconds": 3.1696717687882483,
+      "fit_index": 17,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 332
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.95,
+      "actual_tree_depth_min": 8,
+      "depth_utilization": 0.9949999999999999,
+      "fit_duration_seconds": 3.1846764208748937,
+      "fit_index": 18,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 340
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.1885838541202247,
+      "fit_index": 19,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 348
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.99,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.999,
+      "fit_duration_seconds": 3.0316941519267857,
+      "fit_index": 20,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 356
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.98,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.998,
+      "fit_duration_seconds": 3.0453024078160524,
+      "fit_index": 21,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 364
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.98,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.998,
+      "fit_duration_seconds": 3.190894627943635,
+      "fit_index": 22,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 372
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 9.99,
+      "actual_tree_depth_min": 9,
+      "depth_utilization": 0.999,
+      "fit_duration_seconds": 2.6805050033144653,
+      "fit_index": 23,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 380
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.6069780248217285,
+      "fit_index": 24,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 388
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.6688141305930912,
+      "fit_index": 25,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 396
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.6280646147206426,
+      "fit_index": 26,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 404
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.621172907296568,
+      "fit_index": 27,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 412
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.5658189109526575,
+      "fit_index": 28,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 420
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.4578371718525887,
+      "fit_index": 29,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 428
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.476804632227868,
+      "fit_index": 30,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 436
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.2619128469377756,
+      "fit_index": 31,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 444
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.30751538509503,
+      "fit_index": 32,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 452
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.5646766130812466,
+      "fit_index": 33,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 460
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.7018669452518225,
+      "fit_index": 34,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 468
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.909257330931723,
+      "fit_index": 35,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 476
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.4859841000288725,
+      "fit_index": 36,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 484
+    },
+    {
+      "actual_tree_depth_max": 10,
+      "actual_tree_depth_mean": 10.0,
+      "actual_tree_depth_min": 10,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.8867731890641153,
+      "fit_index": 37,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "training_rows": 492
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.65,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9766666666666667,
+      "fit_duration_seconds": 2.722430062945932,
+      "fit_index": 38,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 500
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.7,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.98,
+      "fit_duration_seconds": 2.746855455916375,
+      "fit_index": 39,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 508
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.66,
+      "actual_tree_depth_min": 12,
+      "depth_utilization": 0.9773333333333334,
+      "fit_duration_seconds": 2.753680215217173,
+      "fit_index": 40,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 516
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.72,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9813333333333334,
+      "fit_duration_seconds": 2.6227976200170815,
+      "fit_index": 41,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 524
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.83,
+      "actual_tree_depth_min": 12,
+      "depth_utilization": 0.9886666666666667,
+      "fit_duration_seconds": 2.7439635740593076,
+      "fit_index": 42,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 532
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.83,
+      "actual_tree_depth_min": 12,
+      "depth_utilization": 0.9886666666666667,
+      "fit_duration_seconds": 2.590667452197522,
+      "fit_index": 43,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 540
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.78,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9853333333333333,
+      "fit_duration_seconds": 2.7699268460273743,
+      "fit_index": 44,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 548
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.83,
+      "actual_tree_depth_min": 11,
+      "depth_utilization": 0.9886666666666667,
+      "fit_duration_seconds": 3.2170622828416526,
+      "fit_index": 45,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 565
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.93,
+      "actual_tree_depth_min": 14,
+      "depth_utilization": 0.9953333333333333,
+      "fit_duration_seconds": 2.7711055330000818,
+      "fit_index": 46,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 582
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.94,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.996,
+      "fit_duration_seconds": 2.8237246107310057,
+      "fit_index": 47,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 590
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.95,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9966666666666666,
+      "fit_duration_seconds": 2.777777616865933,
+      "fit_index": 48,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 598
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.92,
+      "actual_tree_depth_min": 14,
+      "depth_utilization": 0.9946666666666667,
+      "fit_duration_seconds": 2.925235527101904,
+      "fit_index": 49,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 615
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.9,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9933333333333334,
+      "fit_duration_seconds": 3.0475409706123173,
+      "fit_index": 50,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 623
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.95,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9966666666666666,
+      "fit_duration_seconds": 2.9849528442136943,
+      "fit_index": 51,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 631
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.96,
+      "actual_tree_depth_min": 14,
+      "depth_utilization": 0.9973333333333334,
+      "fit_duration_seconds": 3.3351983819156885,
+      "fit_index": 52,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 648
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.97,
+      "actual_tree_depth_min": 14,
+      "depth_utilization": 0.998,
+      "fit_duration_seconds": 3.424891309812665,
+      "fit_index": 53,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 665
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.95,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.9966666666666666,
+      "fit_duration_seconds": 3.6586883142590523,
+      "fit_index": 54,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 673
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.94,
+      "actual_tree_depth_min": 13,
+      "depth_utilization": 0.996,
+      "fit_duration_seconds": 3.2743903286755085,
+      "fit_index": 55,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 690
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 14.96,
+      "actual_tree_depth_min": 14,
+      "depth_utilization": 0.9973333333333334,
+      "fit_duration_seconds": 3.116349899675697,
+      "fit_index": 56,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 716
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0417167115956545,
+      "fit_index": 57,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 724
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.116204014979303,
+      "fit_index": 58,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 741
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.2546738157980144,
+      "fit_index": 59,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 758
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.327509126160294,
+      "fit_index": 60,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 784
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.554633707739413,
+      "fit_index": 61,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 792
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.9499592669308186,
+      "fit_index": 62,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 800
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.3356777587905526,
+      "fit_index": 63,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 808
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.3666251027025282,
+      "fit_index": 64,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 825
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.2966546220704913,
+      "fit_index": 65,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 842
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.2426178199239075,
+      "fit_index": 66,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 850
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.274847786873579,
+      "fit_index": 67,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 867
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.257351261097938,
+      "fit_index": 68,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 884
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.1287930659018457,
+      "fit_index": 69,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 892
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.2702537612058222,
+      "fit_index": 70,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 900
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.9462069794535637,
+      "fit_index": 71,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 917
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.9063239698298275,
+      "fit_index": 72,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 925
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0105848680250347,
+      "fit_index": 73,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 933
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0289382059127092,
+      "fit_index": 74,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 941
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.991963262204081,
+      "fit_index": 75,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 949
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 2.959025732241571,
+      "fit_index": 76,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 957
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.1486114310100675,
+      "fit_index": 77,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 965
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0135157187469304,
+      "fit_index": 78,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 973
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.294646507129073,
+      "fit_index": 79,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 981
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0774398278445005,
+      "fit_index": 80,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 989
+    },
+    {
+      "actual_tree_depth_max": 15,
+      "actual_tree_depth_mean": 15.0,
+      "actual_tree_depth_min": 15,
+      "depth_utilization": 1.0,
+      "fit_duration_seconds": 3.0726153180003166,
+      "fit_index": 81,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "training_rows": 997
+    }
+  ],
+  "policy_version": 1,
+  "transitions": [
+    {
+      "completed_trials": 0,
+      "settings": {
+        "feature_ratio": 0.8333333333333334,
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "min_samples_split": 3,
+        "n_trees": 100
+      },
+      "source": "smac_defaults"
+    },
+    {
+      "checkpoint": 100,
+      "completed_trials": 108,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "source": "openai_responses_api"
+    },
+    {
+      "checkpoint": 250,
+      "completed_trials": 254,
+      "settings": {
+        "feature_ratio": 0.6,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "min_samples_split": 4,
+        "n_trees": 100
+      },
+      "source": "openai_responses_api"
+    },
+    {
+      "checkpoint": 500,
+      "completed_trials": 500,
+      "settings": {
+        "feature_ratio": 0.5,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_trees": 100
+      },
+      "source": "openai_responses_api"
+    }
+  ]
+}

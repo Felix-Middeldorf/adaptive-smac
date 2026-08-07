@@ -1,0 +1,9 @@
+{
+  "confidence": 0.92,
+  "feature_ratio": 0.6,
+  "max_depth": 8,
+  "min_samples_leaf": 2,
+  "min_samples_split": 4,
+  "n_trees": 100,
+  "reason": "Depth cap utilized at 1.0 indicates trees are constrained (median 8 across all windows). Slightly reducing feature_ratio to 0.6 balances feature diversity and avoids overfitting while maintaining calibration metrics (coverage near target, low error_std_correlation). min_samples values consistent with current effective settings."
+}
